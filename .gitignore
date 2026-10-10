@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.jj/
+data/raw/
+data/processed/
+*.sqlite
+*.sqlite3
+*.grib
+*.grib2
+*.zarr/
