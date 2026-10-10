@@ -19,6 +19,7 @@ def main():
             "verify",
             "locations",
             "availability",
+            "check-noaa",
         ],
     )
     a = p.parse_args()
@@ -66,6 +67,10 @@ def main():
         from .publication import audit
 
         audit()
+    elif a.command == "check-noaa":
+        from .noaa_check import run
+
+        run()
 
 
 if __name__ == "__main__":

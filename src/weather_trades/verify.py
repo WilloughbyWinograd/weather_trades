@@ -2,11 +2,10 @@
 
 import hashlib
 import json
-import math
 from collections import Counter, defaultdict
 from datetime import datetime
 from decimal import Decimal, ROUND_CEILING
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import urlparse
 from .http import ROOT, CACHE
 from .forecasts import settings, days, station_rows
 from .markets import weather_series
@@ -94,81 +93,18 @@ def verify():
         "Entire requested forecast matrix present exactly once",
         len(forecasts) == expected == len(set(forecast_keys)),
     )
-    source_cache = {}
-    max_grid_distance_km = defaultdict(float)
-    for r in forecasts:
-        key = r["source_cache_key"]
-        if key not in source_cache:
-            metadata = json.loads((CACHE / (key + ".meta")).read_text())
-            query = parse_qs(urlparse(metadata["url"]).query)
-            response = (
-                None
-                if metadata.get("error")
-                else json.loads((CACHE / (key + ".json")).read_text())
-            )
-            source_cache[key] = (query, response)
-        query, response = source_cache[key]
-        index = next(i for i, s in enumerate(stations) if s["cli"] == r["cli"])
-        check(
-            "Requested station and explicit individual model run",
-            query["models"] == [r["source_model"]]
-            and query["run"][0] == r["run"][:16]
-            and query["elevation"][0].split(",")[index] == "nan"
-            and query["cell_selection"] == ["nearest"]
-            and float(query["latitude"][0].split(",")[index])
-            == float(r["requested_latitude"])
-            and float(query["longitude"][0].split(",")[index])
-            == float(r["requested_longitude"]),
-        )
-        if response is None:
-            check(
-                "Unavailable source does not become a forecast",
-                r["status"] == "source run unavailable"
-                and not r["high_f"]
-                and not r["high_c"],
-            )
-            continue
-        d = response[index]
-        check(
-            "Source units and timezone",
-            d["hourly_units"]["temperature_2m"] == "°C"
-            and d["utc_offset_seconds"] == 0,
-        )
-        a, b = r["first_valid"][:16], r["last_valid"][:16]
-        values = [
-            v
-            for t, v in zip(d["hourly"]["time"], d["hourly"]["temperature_2m"])
-            if a <= t <= b
-        ]
-        finite = len(values) == int(r["expected_hours"]) and all(
-            v is not None and math.isfinite(v) for v in values
-        )
-        if r["status"] == "complete":
-            check(
-                "Forecast maximum independently reduced from source hours",
-                finite
-                and len(values) == int(r["valid_hours"]) == 24
-                and abs(max(values) * 1.8 + 32 - float(r["high_f"])) < 1e-9,
-            )
-        lat1, lat2 = map(math.radians, [float(r["requested_latitude"]), d["latitude"]])
-        delta_lat = lat2 - lat1
-        delta_lon = math.radians(d["longitude"] - float(r["requested_longitude"]))
-        distance = (
-            6371
-            * 2
-            * math.asin(
-                min(
-                    1,
-                    math.sqrt(
-                        math.sin(delta_lat / 2) ** 2
-                        + math.cos(lat1) * math.cos(lat2) * math.sin(delta_lon / 2) ** 2
-                    ),
-                )
-            )
-        )
-        max_grid_distance_km[r["model"]] = max(
-            max_grid_distance_km[r["model"]], distance
-        )
+    from .verify_archive import audit as audit_archive
+
+    max_grid_distance_km = audit_archive(forecasts, stations, check)
+    from .noaa_check import run as verify_native
+
+    native = verify_native(offline=True)
+    check(
+        "Native NOAA checks cover both models, cycles, and date boundaries",
+        native["status"] == "passed"
+        and native["checked_runs"] == 12
+        and native["station_value_checks"] == 288,
+    )
     check(
         "Station grid extraction remains local",
         max_grid_distance_km["GFS"] < 50 and max_grid_distance_km["HRRR"] < 10,
@@ -204,7 +140,11 @@ def verify():
             all(
                 float(r["entry_ts"])
                 > float(r["decision_ts"])
-                >= datetime.fromisoformat(r["run"]).timestamp() + 5 * 3600
+                >= max(
+                    datetime.fromisoformat(r["previous_available_at"]).timestamp(),
+                    datetime.fromisoformat(r["current_available_at"]).timestamp(),
+                )
+                + cfg["processing_buffer_seconds"]
                 and float(r["entry_ts"])
                 < min(
                     float(r["settlement_ts"]),
@@ -223,6 +163,26 @@ def verify():
                 for r in trades
             ),
         )
+        archive_records = {
+            (r["model"], r["run"]): r
+            for r in json.loads((ROOT / "reports/archive-runs.json").read_text())
+            if r["status"] == "complete"
+        }
+        for row in ledger:
+            previous = archive_records[(model, row["previous_run"])]
+            current = archive_records[(model, row["run"])]
+            ready = max(
+                datetime.fromisoformat(previous["available_at"]).timestamp(),
+                datetime.fromisoformat(current["available_at"]).timestamp(),
+            )
+            check(
+                label
+                + "every accepted or rejected signal has actual publication evidence",
+                row["previous_source_etag"] == previous["data_object"]["etag"]
+                and row["current_source_etag"] == current["data_object"]["etag"]
+                and float(row["decision_ts"])
+                >= ready + cfg["processing_buffer_seconds"],
+            )
         for r in trades:
             quantity, price = int(r["quantity"]), Decimal(r["price"])
             quantum = Decimal("0.01" if scenario == "cent_fees" else "0.0001")
@@ -308,8 +268,9 @@ def verify():
     )
     record = {
         "status": "passed",
-        "verification_scope": "Source extraction and simulation arithmetic under declared assumptions",
-        "historical_forecast_accessibility": "unverified; fixed release delays assumed",
+        "verification_scope": "Original run-file bytes, completed-run publication, post-publication entries, and simulation arithmetic",
+        "historical_forecast_accessibility": "verified for the exact public run-file source before simulated entry; not a claim about the historical forecast API",
+        "verified_forecast_source_before_entry": True,
         "historical_executable_fills": "unverified; quoted fills assumed",
         "verified_exact_live_replay": False,
         "assertions": len(checks),

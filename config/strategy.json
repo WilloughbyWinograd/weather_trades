@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "frozen_at_utc": "2026-10-10T12:47:23.529573+00:00",
   "study_start": "2026-08-28",
   "study_end": "2026-10-08",
@@ -12,23 +12,33 @@
   "maximum_price_dollars": 0.6,
   "previous_cycle_utc_hour": 12,
   "current_cycle_utc_hour": 18,
-  "release_lag_hours": 5,
   "entry_delay_minutes": 1,
   "quote_max_wait_minutes": 5,
   "models": {
-    "GFS": "gfs_global",
-    "HRRR": "gfs_hrrr"
+    "GFS": "ncep_gfs013",
+    "HRRR": "ncep_hrrr_conus"
   },
   "fee_rate": "0.07",
   "fee_rounding_dollars": "0.0001",
   "fee_effective_start": "2026-07-07",
   "fee_source": "https://kalshi.com/docs/kalshi-fee-schedule.pdf",
-  "forecast_source": "https://single-runs-api.open-meteo.com/v1/forecast",
-  "forecast_extraction": "nearest grid cell; elevation=nan; no elevation adjustment",
+  "forecast_source": "https://openmeteo.s3.amazonaws.com/data_run",
+  "forecast_extraction": "Original archived 32-bit Celsius temperatures at the nearest producer grid cell; no API rounding or elevation adjustment",
   "position_exit": "actual recorded settlement timestamp",
   "signal": "adjacent outcome toward revised forecast; changed outcome required",
   "rounding": "Forecast rounded to nearest integer Fahrenheit (half away from zero) as a declared strategy assumption for integer domestic reports; contract settlement uses source full precision.",
   "scope": "personal hypothetical research; no order submission",
   "execution_scenarios_frozen_at_utc": "2026-10-10T13:06:42.775045+00:00",
-  "execution_scenarios_note": "Baseline and sensitivity scenarios declared before first performance calculation; no tuning from returns."
+  "execution_scenarios_note": "Baseline and sensitivity scenarios declared before first performance calculation; no tuning from returns.",
+  "timing_correction_frozen_at_utc": "2026-10-10T13:24:35.211484+00:00",
+  "timing_correction": "Use the public completion marker and exact archived run bytes separately for each model; no fixed forecast-release delay. No profitability-driven parameter changes.",
+  "original_release_lag_hours": 5,
+  "availability_poll_seconds": 60,
+  "processing_buffer_seconds": 60,
+  "timing_sensitivities": [
+    "per-model publication",
+    "both models published",
+    "5-minute execution delay",
+    "15-minute execution delay"
+  ]
 }

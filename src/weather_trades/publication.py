@@ -33,7 +33,10 @@ def audit():
             else None
         )
         entry = dt.replace(hour=cfg["current_cycle_utc_hour"]) + timedelta(
-            hours=cfg["release_lag_hours"], minutes=cfg["entry_delay_minutes"] + 1
+            hours=cfg.get(
+                "release_lag_hours", cfg.get("original_release_lag_hours", 5)
+            ),
+            minutes=cfg["entry_delay_minutes"] + 1,
         )
         return {
             "model": model,

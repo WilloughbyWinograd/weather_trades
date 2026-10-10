@@ -1,0 +1,3069 @@
+{
+  "status": "passed",
+  "checked_runs": 12,
+  "station_value_checks": 288,
+  "tolerance_c": 0.051,
+  "scope": "First, middle and final study dates, both cycles and both models; archive storage quantization allowed",
+  "checks": [
+    {
+      "model": "GFS",
+      "run": "2026-08-27T12:00:00+00:00",
+      "valid_time": "2026-08-28T12:00:00+00:00",
+      "source": {
+        "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20260827/12/atmos/gfs.t12z.sfluxgrbf024.grib2",
+        "last_modified": "2026-08-27T15:39:34+00:00",
+        "etag": "\"b08769adf86757c97e00dda7050ee7aa\"",
+        "bytes": 308184148,
+        "version_id": null
+      },
+      "index_line": "33:63917134:d=2026082712:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "d5f95091bd892ff716f4e2215e0f04fa3fd8ffe9fddf9b07be40fcf312651f37",
+      "range_start": 63917134,
+      "range_end_exclusive": 65877143,
+      "message_sha256": "195415757c82d32829056aed7e56aefa8ab9d1feab53cc63cf266b6aa5f51bd4",
+      "grib_metadata": {
+        "dataDate": 20260827,
+        "dataTime": 1200,
+        "forecastTime": 24,
+        "validityDate": 20260828,
+        "validityTime": 1200,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K"
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.68044054256347,
+          "native_longitude": -84.37499961707994,
+          "native_c": 23.150000000000034,
+          "stored_c": 23.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.165959837819145,
+          "native_longitude": -97.73437463563909,
+          "native_c": 23.950000000000045,
+          "stored_c": 23.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.34949284168386,
+          "native_longitude": -71.01562459852079,
+          "native_c": 21.55000000000001,
+          "stored_c": 21.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.83501220148923,
+          "native_longitude": -76.99218710682356,
+          "native_c": 22.250000000000057,
+          "stored_c": 22.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -104.64843714524426,
+          "native_c": 17.850000000000023,
+          "stored_c": 17.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.86039504659137,
+          "native_longitude": -97.03124963466229,
+          "native_c": 29.150000000000034,
+          "stored_c": 29.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.70940188049759,
+          "native_longitude": -74.17968710291638,
+          "native_c": 22.05000000000001,
+          "stored_c": 22.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -95.2734371322203,
+          "native_c": 24.850000000000023,
+          "stored_c": 24.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.023427667107086,
+          "native_longitude": -115.19531215989622,
+          "native_c": 32.650000000000034,
+          "stored_c": 32.650001525878906,
+          "difference_c": 1.5258788721439487e-06
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.91473925548123,
+          "native_longitude": -118.3593746642918,
+          "native_c": 26.250000000000057,
+          "stored_c": 26.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.76374607073846,
+          "native_longitude": -87.77343712180112,
+          "native_c": 19.450000000000045,
+          "stored_c": 19.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.83143361114265,
+          "native_longitude": -80.27343711138195,
+          "native_c": 29.250000000000057,
+          "stored_c": 29.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.92677862068041,
+          "native_longitude": -93.2812496294527,
+          "native_c": 16.950000000000045,
+          "stored_c": 16.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 30.048810480666507,
+          "native_longitude": -90.23437462521991,
+          "native_c": 27.350000000000023,
+          "stored_c": 27.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.82655123512468,
+          "native_longitude": -73.94531210259078,
+          "native_c": 23.250000000000057,
+          "stored_c": 23.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.43768088696716,
+          "native_longitude": -97.61718713547629,
+          "native_c": 23.250000000000057,
+          "stored_c": 23.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -75.23437460438157,
+          "native_c": 21.950000000000045,
+          "stored_c": 21.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.446141829548054,
+          "native_longitude": -112.03124965550063,
+          "native_c": 35.25000000000006,
+          "stored_c": 35.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.743245689929715,
+          "native_longitude": -117.18749966266381,
+          "native_c": 24.750000000000057,
+          "stored_c": 24.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -98.43749963661588,
+          "native_c": 25.750000000000057,
+          "stored_c": 25.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.13211606958218,
+          "native_longitude": -85.78124961903353,
+          "native_c": 21.950000000000045,
+          "stored_c": 21.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.38691502328743,
+          "native_longitude": -122.34374966982699,
+          "native_c": 14.150000000000034,
+          "stored_c": 14.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.663518647663906,
+          "native_longitude": -122.34374966982699,
+          "native_c": 16.55000000000001,
+          "stored_c": 16.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.240804461612264,
+          "native_longitude": -74.76562460373037,
+          "native_c": 21.450000000000045,
+          "stored_c": 21.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        }
+      ],
+      "maximum_difference_c": 1.5258788721439487e-06
+    },
+    {
+      "model": "GFS",
+      "run": "2026-08-27T18:00:00+00:00",
+      "valid_time": "2026-08-28T18:00:00+00:00",
+      "source": {
+        "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20260827/18/atmos/gfs.t18z.sfluxgrbf024.grib2",
+        "last_modified": "2026-08-27T21:43:39+00:00",
+        "etag": "\"e755a73ecfc9e32d2152ae44ce7815f6\"",
+        "bytes": 304513259,
+        "version_id": null
+      },
+      "index_line": "33:64032692:d=2026082718:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "0fee4fc27fcfedbe84383d769c7e1e92646c6a1648251dfdcb176299a1027672",
+      "range_start": 64032692,
+      "range_end_exclusive": 66011296,
+      "message_sha256": "fbfa3b59cd6bcaa8399d98c8c5e52f71a2d956e3d5748e712b4386ffa187aa39",
+      "grib_metadata": {
+        "dataDate": 20260827,
+        "dataTime": 1800,
+        "forecastTime": 24,
+        "validityDate": 20260828,
+        "validityTime": 1800,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K"
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.68044054256347,
+          "native_longitude": -84.37499961707994,
+          "native_c": 33.450000000000045,
+          "stored_c": 33.45000076293945,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.165959837819145,
+          "native_longitude": -97.73437463563909,
+          "native_c": 35.25000000000006,
+          "stored_c": 35.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.34949284168386,
+          "native_longitude": -71.01562459852079,
+          "native_c": 27.450000000000045,
+          "stored_c": 27.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.83501220148923,
+          "native_longitude": -76.99218710682356,
+          "native_c": 31.850000000000023,
+          "stored_c": 31.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -104.64843714524426,
+          "native_c": 32.25000000000006,
+          "stored_c": 32.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.86039504659137,
+          "native_longitude": -97.03124963466229,
+          "native_c": 37.55000000000007,
+          "stored_c": 37.54999923706055,
+          "difference_c": -7.629395213371026e-07
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.70940188049759,
+          "native_longitude": -74.17968710291638,
+          "native_c": 30.650000000000034,
+          "stored_c": 30.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -95.2734371322203,
+          "native_c": 36.55000000000007,
+          "stored_c": 36.54999923706055,
+          "difference_c": -7.629395213371026e-07
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.023427667107086,
+          "native_longitude": -115.19531215989622,
+          "native_c": 38.05000000000007,
+          "stored_c": 38.04999923706055,
+          "difference_c": -7.629395213371026e-07
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.91473925548123,
+          "native_longitude": -118.3593746642918,
+          "native_c": 29.05000000000001,
+          "stored_c": 29.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.76374607073846,
+          "native_longitude": -87.77343712180112,
+          "native_c": 27.850000000000023,
+          "stored_c": 27.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.83143361114265,
+          "native_longitude": -80.27343711138195,
+          "native_c": 31.05000000000001,
+          "stored_c": 31.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.92677862068041,
+          "native_longitude": -93.2812496294527,
+          "native_c": 30.05000000000001,
+          "stored_c": 30.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 30.048810480666507,
+          "native_longitude": -90.23437462521991,
+          "native_c": 25.950000000000045,
+          "stored_c": 25.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.82655123512468,
+          "native_longitude": -73.94531210259078,
+          "native_c": 31.450000000000045,
+          "stored_c": 31.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.43768088696716,
+          "native_longitude": -97.61718713547629,
+          "native_c": 36.75000000000006,
+          "stored_c": 36.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -75.23437460438157,
+          "native_c": 30.55000000000001,
+          "stored_c": 30.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.446141829548054,
+          "native_longitude": -112.03124965550063,
+          "native_c": 39.05000000000007,
+          "stored_c": 39.04999923706055,
+          "difference_c": -7.629395213371026e-07
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.743245689929715,
+          "native_longitude": -117.18749966266381,
+          "native_c": 27.55000000000001,
+          "stored_c": 27.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -98.43749963661588,
+          "native_c": 34.450000000000045,
+          "stored_c": 34.45000076293945,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.13211606958218,
+          "native_longitude": -85.78124961903353,
+          "native_c": 31.250000000000057,
+          "stored_c": 31.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.38691502328743,
+          "native_longitude": -122.34374966982699,
+          "native_c": 15.350000000000023,
+          "stored_c": 15.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.663518647663906,
+          "native_longitude": -122.34374966982699,
+          "native_c": 16.750000000000057,
+          "stored_c": 16.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.240804461612264,
+          "native_longitude": -74.76562460373037,
+          "native_c": 30.05000000000001,
+          "stored_c": 30.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        }
+      ],
+      "maximum_difference_c": 7.629395213371026e-07
+    },
+    {
+      "model": "GFS",
+      "run": "2026-09-16T12:00:00+00:00",
+      "valid_time": "2026-09-17T12:00:00+00:00",
+      "source": {
+        "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20260916/12/atmos/gfs.t12z.sfluxgrbf024.grib2",
+        "last_modified": "2026-09-16T15:40:19+00:00",
+        "etag": "\"12485a7886801605e0aef3bd357ddfcf\"",
+        "bytes": 309715900,
+        "version_id": null
+      },
+      "index_line": "33:63904755:d=2026091612:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "f40713cc067c4a38aaec188696a37c8c746a6071ef08a04cb07dbaa421dd87d4",
+      "range_start": 63904755,
+      "range_end_exclusive": 65846331,
+      "message_sha256": "28fe472781f6e91a36719bf8b959abd172dcf515a0b4fdd0afc94bb5b1407a64",
+      "grib_metadata": {
+        "dataDate": 20260916,
+        "dataTime": 1200,
+        "forecastTime": 24,
+        "validityDate": 20260917,
+        "validityTime": 1200,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K"
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.68044054256347,
+          "native_longitude": -84.37499961707994,
+          "native_c": 22.55000000000001,
+          "stored_c": 22.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.165959837819145,
+          "native_longitude": -97.73437463563909,
+          "native_c": 24.950000000000045,
+          "stored_c": 24.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.34949284168386,
+          "native_longitude": -71.01562459852079,
+          "native_c": 19.150000000000034,
+          "stored_c": 19.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.83501220148923,
+          "native_longitude": -76.99218710682356,
+          "native_c": 20.750000000000057,
+          "stored_c": 20.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -104.64843714524426,
+          "native_c": 17.750000000000057,
+          "stored_c": 17.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.86039504659137,
+          "native_longitude": -97.03124963466229,
+          "native_c": 29.850000000000023,
+          "stored_c": 29.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.70940188049759,
+          "native_longitude": -74.17968710291638,
+          "native_c": 21.950000000000045,
+          "stored_c": 21.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -95.2734371322203,
+          "native_c": 26.750000000000057,
+          "stored_c": 26.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.023427667107086,
+          "native_longitude": -115.19531215989622,
+          "native_c": 21.450000000000045,
+          "stored_c": 21.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.91473925548123,
+          "native_longitude": -118.3593746642918,
+          "native_c": 20.450000000000045,
+          "stored_c": 20.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.76374607073846,
+          "native_longitude": -87.77343712180112,
+          "native_c": 19.250000000000057,
+          "stored_c": 19.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.83143361114265,
+          "native_longitude": -80.27343711138195,
+          "native_c": 28.350000000000023,
+          "stored_c": 28.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.92677862068041,
+          "native_longitude": -93.2812496294527,
+          "native_c": 16.750000000000057,
+          "stored_c": 16.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 30.048810480666507,
+          "native_longitude": -90.23437462521991,
+          "native_c": 27.850000000000023,
+          "stored_c": 27.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.82655123512468,
+          "native_longitude": -73.94531210259078,
+          "native_c": 22.850000000000023,
+          "stored_c": 22.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.43768088696716,
+          "native_longitude": -97.61718713547629,
+          "native_c": 25.450000000000045,
+          "stored_c": 25.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -75.23437460438157,
+          "native_c": 20.650000000000034,
+          "stored_c": 20.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.446141829548054,
+          "native_longitude": -112.03124965550063,
+          "native_c": 25.850000000000023,
+          "stored_c": 25.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.743245689929715,
+          "native_longitude": -117.18749966266381,
+          "native_c": 20.450000000000045,
+          "stored_c": 20.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -98.43749963661588,
+          "native_c": 25.250000000000057,
+          "stored_c": 25.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.13211606958218,
+          "native_longitude": -85.78124961903353,
+          "native_c": 23.650000000000034,
+          "stored_c": 23.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.38691502328743,
+          "native_longitude": -122.34374966982699,
+          "native_c": 12.050000000000011,
+          "stored_c": 12.050000190734863,
+          "difference_c": 1.9073485191256623e-07
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.663518647663906,
+          "native_longitude": -122.34374966982699,
+          "native_c": 16.250000000000057,
+          "stored_c": 16.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.240804461612264,
+          "native_longitude": -74.76562460373037,
+          "native_c": 21.350000000000023,
+          "stored_c": 21.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        }
+      ],
+      "maximum_difference_c": 7.629394644936838e-07
+    },
+    {
+      "model": "GFS",
+      "run": "2026-09-16T18:00:00+00:00",
+      "valid_time": "2026-09-17T18:00:00+00:00",
+      "source": {
+        "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20260916/18/atmos/gfs.t18z.sfluxgrbf024.grib2",
+        "last_modified": "2026-09-16T21:43:16+00:00",
+        "etag": "\"2a882a25fb6decb5a990597c2bc17226\"",
+        "bytes": 307294945,
+        "version_id": null
+      },
+      "index_line": "33:63939965:d=2026091618:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "d7abc28d392bfdded2251a425be42209dd653b8a95083896f47b9600e3b9863a",
+      "range_start": 63939965,
+      "range_end_exclusive": 65902423,
+      "message_sha256": "3e7778c29746277838f4b7d4afd18f5ded66aa45d9d10f6ad19d2140d91ecb95",
+      "grib_metadata": {
+        "dataDate": 20260916,
+        "dataTime": 1800,
+        "forecastTime": 24,
+        "validityDate": 20260917,
+        "validityTime": 1800,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K"
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.68044054256347,
+          "native_longitude": -84.37499961707994,
+          "native_c": 32.85000000000002,
+          "stored_c": 32.849998474121094,
+          "difference_c": -1.5258789289873675e-06
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.165959837819145,
+          "native_longitude": -97.73437463563909,
+          "native_c": 35.150000000000034,
+          "stored_c": 35.150001525878906,
+          "difference_c": 1.5258788721439487e-06
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.34949284168386,
+          "native_longitude": -71.01562459852079,
+          "native_c": 23.950000000000045,
+          "stored_c": 23.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.83501220148923,
+          "native_longitude": -76.99218710682356,
+          "native_c": 32.650000000000034,
+          "stored_c": 32.650001525878906,
+          "difference_c": 1.5258788721439487e-06
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -104.64843714524426,
+          "native_c": 24.05000000000001,
+          "stored_c": 24.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.86039504659137,
+          "native_longitude": -97.03124963466229,
+          "native_c": 36.05000000000007,
+          "stored_c": 36.04999923706055,
+          "difference_c": -7.629395213371026e-07
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.70940188049759,
+          "native_longitude": -74.17968710291638,
+          "native_c": 29.150000000000034,
+          "stored_c": 29.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -95.2734371322203,
+          "native_c": 31.150000000000034,
+          "stored_c": 31.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.023427667107086,
+          "native_longitude": -115.19531215989622,
+          "native_c": 29.450000000000045,
+          "stored_c": 29.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.91473925548123,
+          "native_longitude": -118.3593746642918,
+          "native_c": 22.950000000000045,
+          "stored_c": 22.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.76374607073846,
+          "native_longitude": -87.77343712180112,
+          "native_c": 26.450000000000045,
+          "stored_c": 26.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.83143361114265,
+          "native_longitude": -80.27343711138195,
+          "native_c": 31.250000000000057,
+          "stored_c": 31.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.92677862068041,
+          "native_longitude": -93.2812496294527,
+          "native_c": 22.350000000000023,
+          "stored_c": 22.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 30.048810480666507,
+          "native_longitude": -90.23437462521991,
+          "native_c": 29.350000000000023,
+          "stored_c": 29.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.82655123512468,
+          "native_longitude": -73.94531210259078,
+          "native_c": 29.850000000000023,
+          "stored_c": 29.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.43768088696716,
+          "native_longitude": -97.61718713547629,
+          "native_c": 37.150000000000034,
+          "stored_c": 37.150001525878906,
+          "difference_c": 1.5258788721439487e-06
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -75.23437460438157,
+          "native_c": 29.650000000000034,
+          "stored_c": 29.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.446141829548054,
+          "native_longitude": -112.03124965550063,
+          "native_c": 31.05000000000001,
+          "stored_c": 31.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.743245689929715,
+          "native_longitude": -117.18749966266381,
+          "native_c": 23.55000000000001,
+          "stored_c": 23.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -98.43749963661588,
+          "native_c": 33.55000000000001,
+          "stored_c": 33.54999923706055,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.13211606958218,
+          "native_longitude": -85.78124961903353,
+          "native_c": 36.150000000000034,
+          "stored_c": 36.150001525878906,
+          "difference_c": 1.5258788721439487e-06
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.38691502328743,
+          "native_longitude": -122.34374966982699,
+          "native_c": 20.750000000000057,
+          "stored_c": 20.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.663518647663906,
+          "native_longitude": -122.34374966982699,
+          "native_c": 16.750000000000057,
+          "stored_c": 16.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.240804461612264,
+          "native_longitude": -74.76562460373037,
+          "native_c": 30.150000000000034,
+          "stored_c": 30.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        }
+      ],
+      "maximum_difference_c": 1.5258789289873675e-06
+    },
+    {
+      "model": "GFS",
+      "run": "2026-10-07T12:00:00+00:00",
+      "valid_time": "2026-10-08T12:00:00+00:00",
+      "source": {
+        "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20261007/12/atmos/gfs.t12z.sfluxgrbf024.grib2",
+        "last_modified": "2026-10-07T15:39:55+00:00",
+        "etag": "\"ee73194420d7321c8d8006d2f9410abb\"",
+        "bytes": 312509152,
+        "version_id": null
+      },
+      "index_line": "33:65903937:d=2026100712:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "f6ffcbb51e31fab9e45896093beb772f0299a6b214d87c11067cf396cbdf1cf4",
+      "range_start": 65903937,
+      "range_end_exclusive": 67872565,
+      "message_sha256": "28cba3c18eff12c507901a9caab2c6abbdc220eadfc214e0ef8c6905695125f1",
+      "grib_metadata": {
+        "dataDate": 20261007,
+        "dataTime": 1200,
+        "forecastTime": 24,
+        "validityDate": 20261008,
+        "validityTime": 1200,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K"
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.68044054256347,
+          "native_longitude": -84.37499961707994,
+          "native_c": 18.950000000000045,
+          "stored_c": 18.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.165959837819145,
+          "native_longitude": -97.73437463563909,
+          "native_c": 20.650000000000034,
+          "stored_c": 20.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.34949284168386,
+          "native_longitude": -71.01562459852079,
+          "native_c": 14.550000000000011,
+          "stored_c": 14.550000190734863,
+          "difference_c": 1.9073485191256623e-07
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.83501220148923,
+          "native_longitude": -76.99218710682356,
+          "native_c": 15.150000000000034,
+          "stored_c": 15.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -104.64843714524426,
+          "native_c": 15.050000000000011,
+          "stored_c": 15.050000190734863,
+          "difference_c": 1.9073485191256623e-07
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.86039504659137,
+          "native_longitude": -97.03124963466229,
+          "native_c": 22.750000000000057,
+          "stored_c": 22.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.70940188049759,
+          "native_longitude": -74.17968710291638,
+          "native_c": 14.150000000000034,
+          "stored_c": 14.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -95.2734371322203,
+          "native_c": 24.05000000000001,
+          "stored_c": 24.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.023427667107086,
+          "native_longitude": -115.19531215989622,
+          "native_c": 24.950000000000045,
+          "stored_c": 24.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.91473925548123,
+          "native_longitude": -118.3593746642918,
+          "native_c": 24.850000000000023,
+          "stored_c": 24.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.76374607073846,
+          "native_longitude": -87.77343712180112,
+          "native_c": 14.750000000000057,
+          "stored_c": 14.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.83143361114265,
+          "native_longitude": -80.27343711138195,
+          "native_c": 27.55000000000001,
+          "stored_c": 27.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.92677862068041,
+          "native_longitude": -93.2812496294527,
+          "native_c": 12.450000000000045,
+          "stored_c": 12.449999809265137,
+          "difference_c": -1.907349087559851e-07
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 30.048810480666507,
+          "native_longitude": -90.23437462521991,
+          "native_c": 24.450000000000045,
+          "stored_c": 24.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.82655123512468,
+          "native_longitude": -73.94531210259078,
+          "native_c": 15.050000000000011,
+          "stored_c": 15.050000190734863,
+          "difference_c": 1.9073485191256623e-07
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.43768088696716,
+          "native_longitude": -97.61718713547629,
+          "native_c": 18.150000000000034,
+          "stored_c": 18.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -75.23437460438157,
+          "native_c": 13.750000000000057,
+          "stored_c": 13.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.446141829548054,
+          "native_longitude": -112.03124965550063,
+          "native_c": 31.55000000000001,
+          "stored_c": 31.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.743245689929715,
+          "native_longitude": -117.18749966266381,
+          "native_c": 24.55000000000001,
+          "stored_c": 24.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -98.43749963661588,
+          "native_c": 21.05000000000001,
+          "stored_c": 21.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.13211606958218,
+          "native_longitude": -85.78124961903353,
+          "native_c": 16.05000000000001,
+          "stored_c": 16.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.38691502328743,
+          "native_longitude": -122.34374966982699,
+          "native_c": 11.450000000000045,
+          "stored_c": 11.449999809265137,
+          "difference_c": -1.907349087559851e-07
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.663518647663906,
+          "native_longitude": -122.34374966982699,
+          "native_c": 17.750000000000057,
+          "stored_c": 17.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.240804461612264,
+          "native_longitude": -74.76562460373037,
+          "native_c": 14.150000000000034,
+          "stored_c": 14.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        }
+      ],
+      "maximum_difference_c": 7.629394644936838e-07
+    },
+    {
+      "model": "GFS",
+      "run": "2026-10-07T18:00:00+00:00",
+      "valid_time": "2026-10-08T18:00:00+00:00",
+      "source": {
+        "url": "https://noaa-gfs-bdp-pds.s3.amazonaws.com/gfs.20261007/18/atmos/gfs.t18z.sfluxgrbf024.grib2",
+        "last_modified": "2026-10-07T21:43:13+00:00",
+        "etag": "\"cac9c1c54e2ea56227f900d81890f27b\"",
+        "bytes": 305788372,
+        "version_id": null
+      },
+      "index_line": "33:64320727:d=2026100718:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "f6c90748516563ffbb1e9404d4a39387887463b2a5aef414f56ad494d0147895",
+      "range_start": 64320727,
+      "range_end_exclusive": 66292809,
+      "message_sha256": "972a1dfdc9443e8a744329ba96b6461367cc6e9d70fde62de8cb1958992c9aea",
+      "grib_metadata": {
+        "dataDate": 20261007,
+        "dataTime": 1800,
+        "forecastTime": 24,
+        "validityDate": 20261008,
+        "validityTime": 1800,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K"
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.68044054256347,
+          "native_longitude": -84.37499961707994,
+          "native_c": 29.250000000000057,
+          "stored_c": 29.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.165959837819145,
+          "native_longitude": -97.73437463563909,
+          "native_c": 30.05000000000001,
+          "stored_c": 30.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.34949284168386,
+          "native_longitude": -71.01562459852079,
+          "native_c": 21.750000000000057,
+          "stored_c": 21.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.83501220148923,
+          "native_longitude": -76.99218710682356,
+          "native_c": 25.350000000000023,
+          "stored_c": 25.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -104.64843714524426,
+          "native_c": 26.05000000000001,
+          "stored_c": 26.049999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.86039504659137,
+          "native_longitude": -97.03124963466229,
+          "native_c": 29.650000000000034,
+          "stored_c": 29.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.70940188049759,
+          "native_longitude": -74.17968710291638,
+          "native_c": 23.950000000000045,
+          "stored_c": 23.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -95.2734371322203,
+          "native_c": 31.55000000000001,
+          "stored_c": 31.549999237060547,
+          "difference_c": -7.629394644936838e-07
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.023427667107086,
+          "native_longitude": -115.19531215989622,
+          "native_c": 31.950000000000045,
+          "stored_c": 31.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.91473925548123,
+          "native_longitude": -118.3593746642918,
+          "native_c": 28.250000000000057,
+          "stored_c": 28.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.76374607073846,
+          "native_longitude": -87.77343712180112,
+          "native_c": 21.450000000000045,
+          "stored_c": 21.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.83143361114265,
+          "native_longitude": -80.27343711138195,
+          "native_c": 31.950000000000045,
+          "stored_c": 31.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.92677862068041,
+          "native_longitude": -93.2812496294527,
+          "native_c": 17.650000000000034,
+          "stored_c": 17.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 30.048810480666507,
+          "native_longitude": -90.23437462521991,
+          "native_c": 26.650000000000034,
+          "stored_c": 26.649999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.82655123512468,
+          "native_longitude": -73.94531210259078,
+          "native_c": 24.150000000000034,
+          "stored_c": 24.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.43768088696716,
+          "native_longitude": -97.61718713547629,
+          "native_c": 28.250000000000057,
+          "stored_c": 28.25,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.88935639706046,
+          "native_longitude": -75.23437460438157,
+          "native_c": 23.750000000000057,
+          "stored_c": 23.75,
+          "difference_c": -5.684341886080802e-14
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.446141829548054,
+          "native_longitude": -112.03124965550063,
+          "native_c": 34.650000000000034,
+          "stored_c": 34.650001525878906,
+          "difference_c": 1.5258788721439487e-06
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.743245689929715,
+          "native_longitude": -117.18749966266381,
+          "native_c": 28.850000000000023,
+          "stored_c": 28.850000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.58021305186151,
+          "native_longitude": -98.43749963661588,
+          "native_c": 30.150000000000034,
+          "stored_c": 30.149999618530273,
+          "difference_c": -3.814697606685513e-07
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.13211606958218,
+          "native_longitude": -85.78124961903353,
+          "native_c": 26.950000000000045,
+          "stored_c": 26.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.38691502328743,
+          "native_longitude": -122.34374966982699,
+          "native_c": 18.350000000000023,
+          "stored_c": 18.350000381469727,
+          "difference_c": 3.8146970382513246e-07
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.663518647663906,
+          "native_longitude": -122.34374966982699,
+          "native_c": 17.950000000000045,
+          "stored_c": 17.950000762939453,
+          "difference_c": 7.629394076502649e-07
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.240804461612264,
+          "native_longitude": -74.76562460373037,
+          "native_c": 23.450000000000045,
+          "stored_c": 23.450000762939453,
+          "difference_c": 7.629394076502649e-07
+        }
+      ],
+      "maximum_difference_c": 1.5258788721439487e-06
+    },
+    {
+      "model": "HRRR",
+      "run": "2026-08-27T12:00:00+00:00",
+      "valid_time": "2026-08-28T12:00:00+00:00",
+      "source": {
+        "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20260827/conus/hrrr.t12z.wrfprsf24.grib2",
+        "last_modified": "2026-08-27T13:19:37+00:00",
+        "etag": "\"f71023dc33dc997cb52c023992f952e0\"",
+        "bytes": 453933361,
+        "version_id": null
+      },
+      "index_line": "616:342734874:d=2026082712:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "cc99527f8a9d2038e7527e66ece4e852d135d71caac60bf4e07c75dcaf899015",
+      "range_start": 342734874,
+      "range_end_exclusive": 343983909,
+      "message_sha256": "3ad6565331f6a84dceda28b7dbdc80647e69d3e020545ff54037f68cce761c09",
+      "grib_metadata": {
+        "dataDate": 20260827,
+        "dataTime": 1200,
+        "forecastTime": 24,
+        "validityDate": 20260828,
+        "validityTime": 1200,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K",
+        "native_grid": {
+          "Nx": 1799,
+          "Ny": 1059,
+          "DxInMetres": 3000.0,
+          "DyInMetres": 3000.0,
+          "latitudeOfFirstGridPointInDegrees": 21.138123,
+          "longitudeOfFirstGridPointInDegrees": 237.280472,
+          "scanningMode": 64,
+          "radiusInMetres": 6371229,
+          "LaDInDegrees": 38.5,
+          "LoVInDegrees": 262.5,
+          "Latin1InDegrees": 38.5,
+          "Latin2InDegrees": 38.5
+        }
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.62671858217282,
+          "native_longitude": -84.41810670968249,
+          "native_c": 22.808465576171898,
+          "stored_c": 22.799999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.18916214389748,
+          "native_longitude": -97.69073180843847,
+          "native_c": 25.120965576171898,
+          "stored_c": 25.100000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.3573770676665,
+          "native_longitude": -71.02611906987812,
+          "native_c": 22.120965576171898,
+          "stored_c": 22.100000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.837783411672056,
+          "native_longitude": -77.0417285851209,
+          "native_c": 23.183465576171898,
+          "stored_c": 23.200000762939453,
+          "difference_c": 0.016535186767555388
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.8490251556579,
+          "native_longitude": -104.64481448685729,
+          "native_c": 18.933465576171898,
+          "stored_c": 18.950000762939453,
+          "difference_c": 0.016535186767555388
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.893452613767515,
+          "native_longitude": -97.02584687596779,
+          "native_c": 24.558465576171898,
+          "stored_c": 24.549999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.691939039343126,
+          "native_longitude": -74.18232878348034,
+          "native_c": 21.683465576171898,
+          "stored_c": 21.700000762939453,
+          "difference_c": 0.016535186767555388
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.63264019884428,
+          "native_longitude": -95.29607335226535,
+          "native_c": 26.183465576171898,
+          "stored_c": 26.200000762939453,
+          "difference_c": 0.016535186767555388
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.07995770788199,
+          "native_longitude": -115.15699519663646,
+          "native_c": 29.370965576171898,
+          "stored_c": 29.350000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.94554697556789,
+          "native_longitude": -118.40164890245543,
+          "native_c": 20.995965576171898,
+          "stored_c": 21.0,
+          "difference_c": 0.004034423828102263
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.780904183396366,
+          "native_longitude": -87.77218856076486,
+          "native_c": 17.995965576171898,
+          "stored_c": 18.0,
+          "difference_c": 0.004034423828102263
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.79244720375158,
+          "native_longitude": -80.31272424751506,
+          "native_c": 26.495965576171898,
+          "stored_c": 26.5,
+          "difference_c": 0.004034423828102263
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.88791478497805,
+          "native_longitude": -93.22964218523694,
+          "native_c": 12.870965576171898,
+          "stored_c": 12.850000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 29.995839113164926,
+          "native_longitude": -90.25495049544082,
+          "native_c": 23.558465576171898,
+          "stored_c": 23.549999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.78844804448784,
+          "native_longitude": -73.96537002626548,
+          "native_c": 22.058465576171898,
+          "stored_c": 22.049999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.39615325756065,
+          "native_longitude": -97.60487400619427,
+          "native_c": 23.870965576171898,
+          "stored_c": 23.850000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.8634903688032,
+          "native_longitude": -75.22255730111691,
+          "native_c": 22.620965576171898,
+          "stored_c": 22.600000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.42225231354415,
+          "native_longitude": -111.99095057081557,
+          "native_c": 29.808465576171898,
+          "stored_c": 29.799999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.740724978425526,
+          "native_longitude": -117.18832023217425,
+          "native_c": 19.870965576171898,
+          "stored_c": 19.850000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.544596735291496,
+          "native_longitude": -98.455397654791,
+          "native_c": 23.308465576171898,
+          "stored_c": 23.299999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.176920180628024,
+          "native_longitude": -85.73690695055558,
+          "native_c": 19.370965576171898,
+          "stored_c": 19.350000381469727,
+          "difference_c": -0.020965194702171175
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.43460501641249,
+          "native_longitude": -122.2987454926159,
+          "native_c": 14.308465576171898,
+          "stored_c": 14.300000190734863,
+          "difference_c": -0.008465385437034456
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.60746293171224,
+          "native_longitude": -122.35764831041581,
+          "native_c": 16.558465576171898,
+          "stored_c": 16.549999237060547,
+          "difference_c": -0.008466339111350862
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.28888332158522,
+          "native_longitude": -74.8297971270589,
+          "native_c": 21.433465576171898,
+          "stored_c": 21.450000762939453,
+          "difference_c": 0.016535186767555388
+        }
+      ],
+      "maximum_difference_c": 0.020965194702171175
+    },
+    {
+      "model": "HRRR",
+      "run": "2026-08-27T18:00:00+00:00",
+      "valid_time": "2026-08-28T18:00:00+00:00",
+      "source": {
+        "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20260827/conus/hrrr.t18z.wrfprsf24.grib2",
+        "last_modified": "2026-08-27T19:20:00+00:00",
+        "etag": "\"8872258c08dea9b062d7e8be47f06f49\"",
+        "bytes": 465008601,
+        "version_id": null
+      },
+      "index_line": "616:344508181:d=2026082718:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "3f52417f4b0004ea5d003bd8ddc12a9966f056ee0d8b5e6350dddc4ca1053f51",
+      "range_start": 344508181,
+      "range_end_exclusive": 345797873,
+      "message_sha256": "dd236ed1a7185ff4cd469a7ebb42907de23b04868c6315017be60cfc74855697",
+      "grib_metadata": {
+        "dataDate": 20260827,
+        "dataTime": 1800,
+        "forecastTime": 24,
+        "validityDate": 20260828,
+        "validityTime": 1800,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K",
+        "native_grid": {
+          "Nx": 1799,
+          "Ny": 1059,
+          "DxInMetres": 3000.0,
+          "DyInMetres": 3000.0,
+          "latitudeOfFirstGridPointInDegrees": 21.138123,
+          "longitudeOfFirstGridPointInDegrees": 237.280472,
+          "scanningMode": 64,
+          "radiusInMetres": 6371229,
+          "LaDInDegrees": 38.5,
+          "LoVInDegrees": 262.5,
+          "Latin1InDegrees": 38.5,
+          "Latin2InDegrees": 38.5
+        }
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.62671858217282,
+          "native_longitude": -84.41810670968249,
+          "native_c": 31.698022460937523,
+          "stored_c": 31.700000762939453,
+          "difference_c": 0.0019783020019303876
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.18916214389748,
+          "native_longitude": -97.69073180843847,
+          "native_c": 34.69802246093752,
+          "stored_c": 34.70000076293945,
+          "difference_c": 0.0019783020019303876
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.3573770676665,
+          "native_longitude": -71.02611906987812,
+          "native_c": 28.573022460937523,
+          "stored_c": 28.549999237060547,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.837783411672056,
+          "native_longitude": -77.0417285851209,
+          "native_c": 28.198022460937523,
+          "stored_c": 28.200000762939453,
+          "difference_c": 0.0019783020019303876
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.8490251556579,
+          "native_longitude": -104.64481448685729,
+          "native_c": 33.32302246093752,
+          "stored_c": 33.29999923706055,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.893452613767515,
+          "native_longitude": -97.02584687596779,
+          "native_c": 37.13552246093752,
+          "stored_c": 37.150001525878906,
+          "difference_c": 0.014479064941383513
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.691939039343126,
+          "native_longitude": -74.18232878348034,
+          "native_c": 27.323022460937523,
+          "stored_c": 27.299999237060547,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.63264019884428,
+          "native_longitude": -95.29607335226535,
+          "native_c": 34.07302246093752,
+          "stored_c": 34.04999923706055,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.07995770788199,
+          "native_longitude": -115.15699519663646,
+          "native_c": 40.01052246093752,
+          "stored_c": 40.0,
+          "difference_c": -0.010522460937522737
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.94554697556789,
+          "native_longitude": -118.40164890245543,
+          "native_c": 28.073022460937523,
+          "stored_c": 28.049999237060547,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.780904183396366,
+          "native_longitude": -87.77218856076486,
+          "native_c": 28.135522460937523,
+          "stored_c": 28.149999618530273,
+          "difference_c": 0.0144771575927507
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.79244720375158,
+          "native_longitude": -80.31272424751506,
+          "native_c": 32.01052246093752,
+          "stored_c": 32.0,
+          "difference_c": -0.010522460937522737
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.88791478497805,
+          "native_longitude": -93.22964218523694,
+          "native_c": 28.135522460937523,
+          "stored_c": 28.149999618530273,
+          "difference_c": 0.0144771575927507
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 29.995839113164926,
+          "native_longitude": -90.25495049544082,
+          "native_c": 29.073022460937523,
+          "stored_c": 29.049999237060547,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.78844804448784,
+          "native_longitude": -73.96537002626548,
+          "native_c": 27.010522460937523,
+          "stored_c": 27.0,
+          "difference_c": -0.010522460937522737
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.39615325756065,
+          "native_longitude": -97.60487400619427,
+          "native_c": 35.19802246093752,
+          "stored_c": 35.20000076293945,
+          "difference_c": 0.0019783020019303876
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.8634903688032,
+          "native_longitude": -75.22255730111691,
+          "native_c": 27.510522460937523,
+          "stored_c": 27.5,
+          "difference_c": -0.010522460937522737
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.42225231354415,
+          "native_longitude": -111.99095057081557,
+          "native_c": 41.26052246093752,
+          "stored_c": 41.25,
+          "difference_c": -0.010522460937522737
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.740724978425526,
+          "native_longitude": -117.18832023217425,
+          "native_c": 30.385522460937523,
+          "stored_c": 30.399999618530273,
+          "difference_c": 0.0144771575927507
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.544596735291496,
+          "native_longitude": -98.455397654791,
+          "native_c": 35.44802246093752,
+          "stored_c": 35.45000076293945,
+          "difference_c": 0.0019783020019303876
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.176920180628024,
+          "native_longitude": -85.73690695055558,
+          "native_c": 30.073022460937523,
+          "stored_c": 30.049999237060547,
+          "difference_c": -0.023023223876975862
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.43460501641249,
+          "native_longitude": -122.2987454926159,
+          "native_c": 16.385522460937523,
+          "stored_c": 16.399999618530273,
+          "difference_c": 0.0144771575927507
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.60746293171224,
+          "native_longitude": -122.35764831041581,
+          "native_c": 17.260522460937523,
+          "stored_c": 17.25,
+          "difference_c": -0.010522460937522737
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.28888332158522,
+          "native_longitude": -74.8297971270589,
+          "native_c": 27.323022460937523,
+          "stored_c": 27.299999237060547,
+          "difference_c": -0.023023223876975862
+        }
+      ],
+      "maximum_difference_c": 0.023023223876975862
+    },
+    {
+      "model": "HRRR",
+      "run": "2026-09-16T12:00:00+00:00",
+      "valid_time": "2026-09-17T12:00:00+00:00",
+      "source": {
+        "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20260916/conus/hrrr.t12z.wrfprsf24.grib2",
+        "last_modified": "2026-09-16T13:21:14+00:00",
+        "etag": "\"4058eb0cde5dfaedae3b166a7fd36322\"",
+        "bytes": 443080823,
+        "version_id": null
+      },
+      "index_line": "616:334343027:d=2026091612:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "0258109ea0e042a30d9d0f457f51b3e3c4e0eb9645edf3ab74836d0a7ea06422",
+      "range_start": 334343027,
+      "range_end_exclusive": 335582052,
+      "message_sha256": "1dc0f01973aef066099f333a3ff3160eeb61e37a5cc05f8e55efe0f9325a0bbc",
+      "grib_metadata": {
+        "dataDate": 20260916,
+        "dataTime": 1200,
+        "forecastTime": 24,
+        "validityDate": 20260917,
+        "validityTime": 1200,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K",
+        "native_grid": {
+          "Nx": 1799,
+          "Ny": 1059,
+          "DxInMetres": 3000.0,
+          "DyInMetres": 3000.0,
+          "latitudeOfFirstGridPointInDegrees": 21.138123,
+          "longitudeOfFirstGridPointInDegrees": 237.280472,
+          "scanningMode": 64,
+          "radiusInMetres": 6371229,
+          "LaDInDegrees": 38.5,
+          "LoVInDegrees": 262.5,
+          "Latin1InDegrees": 38.5,
+          "Latin2InDegrees": 38.5
+        }
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.62671858217282,
+          "native_longitude": -84.41810670968249,
+          "native_c": 20.868524169921898,
+          "stored_c": 20.850000381469727,
+          "difference_c": -0.018523788452171175
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.18916214389748,
+          "native_longitude": -97.69073180843847,
+          "native_c": 25.306024169921898,
+          "stored_c": 25.299999237060547,
+          "difference_c": -0.006024932861350862
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.3573770676665,
+          "native_longitude": -71.02611906987812,
+          "native_c": 18.118524169921898,
+          "stored_c": 18.100000381469727,
+          "difference_c": -0.018523788452171175
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.837783411672056,
+          "native_longitude": -77.0417285851209,
+          "native_c": 21.181024169921898,
+          "stored_c": 21.200000762939453,
+          "difference_c": 0.018976593017555388
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.8490251556579,
+          "native_longitude": -104.64481448685729,
+          "native_c": 15.868524169921898,
+          "stored_c": 15.850000381469727,
+          "difference_c": -0.018523788452171175
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.893452613767515,
+          "native_longitude": -97.02584687596779,
+          "native_c": 26.243524169921898,
+          "stored_c": 26.25,
+          "difference_c": 0.006475830078102263
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.691939039343126,
+          "native_longitude": -74.18232878348034,
+          "native_c": 20.056024169921898,
+          "stored_c": 20.049999237060547,
+          "difference_c": -0.006024932861350862
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.63264019884428,
+          "native_longitude": -95.29607335226535,
+          "native_c": 26.243524169921898,
+          "stored_c": 26.25,
+          "difference_c": 0.006475830078102263
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.07995770788199,
+          "native_longitude": -115.15699519663646,
+          "native_c": 22.931024169921898,
+          "stored_c": 22.950000762939453,
+          "difference_c": 0.018976593017555388
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.94554697556789,
+          "native_longitude": -118.40164890245543,
+          "native_c": 19.556024169921898,
+          "stored_c": 19.549999237060547,
+          "difference_c": -0.006024932861350862
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.780904183396366,
+          "native_longitude": -87.77218856076486,
+          "native_c": 18.306024169921898,
+          "stored_c": 18.299999237060547,
+          "difference_c": -0.006024932861350862
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.79244720375158,
+          "native_longitude": -80.31272424751506,
+          "native_c": 24.868524169921898,
+          "stored_c": 24.850000381469727,
+          "difference_c": -0.018523788452171175
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.88791478497805,
+          "native_longitude": -93.22964218523694,
+          "native_c": 15.243524169921898,
+          "stored_c": 15.25,
+          "difference_c": 0.006475830078102263
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 29.995839113164926,
+          "native_longitude": -90.25495049544082,
+          "native_c": 24.431024169921898,
+          "stored_c": 24.450000762939453,
+          "difference_c": 0.018976593017555388
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.78844804448784,
+          "native_longitude": -73.96537002626548,
+          "native_c": 20.806024169921898,
+          "stored_c": 20.799999237060547,
+          "difference_c": -0.006024932861350862
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.39615325756065,
+          "native_longitude": -97.60487400619427,
+          "native_c": 24.806024169921898,
+          "stored_c": 24.799999237060547,
+          "difference_c": -0.006024932861350862
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.8634903688032,
+          "native_longitude": -75.22255730111691,
+          "native_c": 20.431024169921898,
+          "stored_c": 20.450000762939453,
+          "difference_c": 0.018976593017555388
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.42225231354415,
+          "native_longitude": -111.99095057081557,
+          "native_c": 23.493524169921898,
+          "stored_c": 23.5,
+          "difference_c": 0.006475830078102263
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.740724978425526,
+          "native_longitude": -117.18832023217425,
+          "native_c": 19.181024169921898,
+          "stored_c": 19.200000762939453,
+          "difference_c": 0.018976593017555388
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.544596735291496,
+          "native_longitude": -98.455397654791,
+          "native_c": 23.681024169921898,
+          "stored_c": 23.700000762939453,
+          "difference_c": 0.018976593017555388
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.176920180628024,
+          "native_longitude": -85.73690695055558,
+          "native_c": 24.743524169921898,
+          "stored_c": 24.75,
+          "difference_c": 0.006475830078102263
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.43460501641249,
+          "native_longitude": -122.2987454926159,
+          "native_c": 14.118524169921898,
+          "stored_c": 14.100000381469727,
+          "difference_c": -0.018523788452171175
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.60746293171224,
+          "native_longitude": -122.35764831041581,
+          "native_c": 15.681024169921898,
+          "stored_c": 15.699999809265137,
+          "difference_c": 0.01897563934323898
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.28888332158522,
+          "native_longitude": -74.8297971270589,
+          "native_c": 20.243524169921898,
+          "stored_c": 20.25,
+          "difference_c": 0.006475830078102263
+        }
+      ],
+      "maximum_difference_c": 0.018976593017555388
+    },
+    {
+      "model": "HRRR",
+      "run": "2026-09-16T18:00:00+00:00",
+      "valid_time": "2026-09-17T18:00:00+00:00",
+      "source": {
+        "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20260916/conus/hrrr.t18z.wrfprsf24.grib2",
+        "last_modified": "2026-09-16T19:20:22+00:00",
+        "etag": "\"ff2075b8e158681e417c8d4a12469b59\"",
+        "bytes": 452666452,
+        "version_id": null
+      },
+      "index_line": "616:334053641:d=2026091618:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "aee545acfb9494671c8d1a38166d1185e2c9e1ece5ec300232c4ed88c19741d4",
+      "range_start": 334053641,
+      "range_end_exclusive": 335302909,
+      "message_sha256": "34ef5ebb12cf36661228118aa405ad97eb29f67fb864596d95cb7299a5873a67",
+      "grib_metadata": {
+        "dataDate": 20260916,
+        "dataTime": 1800,
+        "forecastTime": 24,
+        "validityDate": 20260917,
+        "validityTime": 1800,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K",
+        "native_grid": {
+          "Nx": 1799,
+          "Ny": 1059,
+          "DxInMetres": 3000.0,
+          "DyInMetres": 3000.0,
+          "latitudeOfFirstGridPointInDegrees": 21.138123,
+          "longitudeOfFirstGridPointInDegrees": 237.280472,
+          "scanningMode": 64,
+          "radiusInMetres": 6371229,
+          "LaDInDegrees": 38.5,
+          "LoVInDegrees": 262.5,
+          "Latin1InDegrees": 38.5,
+          "Latin2InDegrees": 38.5
+        }
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.62671858217282,
+          "native_longitude": -84.41810670968249,
+          "native_c": 32.53383789062502,
+          "stored_c": 32.54999923706055,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.18916214389748,
+          "native_longitude": -97.69073180843847,
+          "native_c": 32.84633789062502,
+          "stored_c": 32.849998474121094,
+          "difference_c": 0.0036605834960710126
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.3573770676665,
+          "native_longitude": -71.02611906987812,
+          "native_c": 23.846337890625023,
+          "stored_c": 23.850000381469727,
+          "difference_c": 0.003662490844703825
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.837783411672056,
+          "native_longitude": -77.0417285851209,
+          "native_c": 29.783837890625023,
+          "stored_c": 29.799999237060547,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.8490251556579,
+          "native_longitude": -104.64481448685729,
+          "native_c": 24.346337890625023,
+          "stored_c": 24.350000381469727,
+          "difference_c": 0.003662490844703825
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.893452613767515,
+          "native_longitude": -97.02584687596779,
+          "native_c": 34.72133789062502,
+          "stored_c": 34.70000076293945,
+          "difference_c": -0.021337127685569612
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.691939039343126,
+          "native_longitude": -74.18232878348034,
+          "native_c": 29.346337890625023,
+          "stored_c": 29.350000381469727,
+          "difference_c": 0.003662490844703825
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.63264019884428,
+          "native_longitude": -95.29607335226535,
+          "native_c": 30.908837890625023,
+          "stored_c": 30.899999618530273,
+          "difference_c": -0.0088382720947493
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.07995770788199,
+          "native_longitude": -115.15699519663646,
+          "native_c": 29.846337890625023,
+          "stored_c": 29.850000381469727,
+          "difference_c": 0.003662490844703825
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.94554697556789,
+          "native_longitude": -118.40164890245543,
+          "native_c": 22.158837890625023,
+          "stored_c": 22.149999618530273,
+          "difference_c": -0.0088382720947493
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.780904183396366,
+          "native_longitude": -87.77218856076486,
+          "native_c": 22.533837890625023,
+          "stored_c": 22.549999237060547,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.79244720375158,
+          "native_longitude": -80.31272424751506,
+          "native_c": 28.346337890625023,
+          "stored_c": 28.350000381469727,
+          "difference_c": 0.003662490844703825
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.88791478497805,
+          "native_longitude": -93.22964218523694,
+          "native_c": 21.033837890625023,
+          "stored_c": 21.049999237060547,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 29.995839113164926,
+          "native_longitude": -90.25495049544082,
+          "native_c": 31.658837890625023,
+          "stored_c": 31.649999618530273,
+          "difference_c": -0.0088382720947493
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.78844804448784,
+          "native_longitude": -73.96537002626548,
+          "native_c": 28.721337890625023,
+          "stored_c": 28.700000762939453,
+          "difference_c": -0.021337127685569612
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.39615325756065,
+          "native_longitude": -97.60487400619427,
+          "native_c": 34.97133789062502,
+          "stored_c": 34.95000076293945,
+          "difference_c": -0.021337127685569612
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.8634903688032,
+          "native_longitude": -75.22255730111691,
+          "native_c": 28.908837890625023,
+          "stored_c": 28.899999618530273,
+          "difference_c": -0.0088382720947493
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.42225231354415,
+          "native_longitude": -111.99095057081557,
+          "native_c": 27.283837890625023,
+          "stored_c": 27.299999237060547,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.740724978425526,
+          "native_longitude": -117.18832023217425,
+          "native_c": 21.533837890625023,
+          "stored_c": 21.549999237060547,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.544596735291496,
+          "native_longitude": -98.455397654791,
+          "native_c": 34.03383789062502,
+          "stored_c": 34.04999923706055,
+          "difference_c": 0.016161346435524138
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.176920180628024,
+          "native_longitude": -85.73690695055558,
+          "native_c": 35.97133789062502,
+          "stored_c": 35.95000076293945,
+          "difference_c": -0.021337127685569612
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.43460501641249,
+          "native_longitude": -122.2987454926159,
+          "native_c": 19.908837890625023,
+          "stored_c": 19.899999618530273,
+          "difference_c": -0.0088382720947493
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.60746293171224,
+          "native_longitude": -122.35764831041581,
+          "native_c": 17.158837890625023,
+          "stored_c": 17.149999618530273,
+          "difference_c": -0.0088382720947493
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.28888332158522,
+          "native_longitude": -74.8297971270589,
+          "native_c": 28.471337890625023,
+          "stored_c": 28.450000762939453,
+          "difference_c": -0.021337127685569612
+        }
+      ],
+      "maximum_difference_c": 0.021337127685569612
+    },
+    {
+      "model": "HRRR",
+      "run": "2026-10-07T12:00:00+00:00",
+      "valid_time": "2026-10-08T12:00:00+00:00",
+      "source": {
+        "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20261007/conus/hrrr.t12z.wrfprsf24.grib2",
+        "last_modified": "2026-10-07T13:19:42+00:00",
+        "etag": "\"2f2bc8d089f0d7494702437e3cfaea72\"",
+        "bytes": 422632216,
+        "version_id": null
+      },
+      "index_line": "616:320004130:d=2026100712:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "8780b10f0a7de942a9f7fb6624a414dcfeee42c84cbe1fc2242a39def3fc1203",
+      "range_start": 320004130,
+      "range_end_exclusive": 321297237,
+      "message_sha256": "865282834a65402bff695777476a667c4dabf0d44782ac9a8c9f7eef2a559bd4",
+      "grib_metadata": {
+        "dataDate": 20261007,
+        "dataTime": 1200,
+        "forecastTime": 24,
+        "validityDate": 20261008,
+        "validityTime": 1200,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K",
+        "native_grid": {
+          "Nx": 1799,
+          "Ny": 1059,
+          "DxInMetres": 3000.0,
+          "DyInMetres": 3000.0,
+          "latitudeOfFirstGridPointInDegrees": 21.138123,
+          "longitudeOfFirstGridPointInDegrees": 237.280472,
+          "scanningMode": 64,
+          "radiusInMetres": 6371229,
+          "LaDInDegrees": 38.5,
+          "LoVInDegrees": 262.5,
+          "Latin1InDegrees": 38.5,
+          "Latin2InDegrees": 38.5
+        }
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.62671858217282,
+          "native_longitude": -84.41810670968249,
+          "native_c": 14.268212890625023,
+          "stored_c": 14.25,
+          "difference_c": -0.018212890625022737
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.18916214389748,
+          "native_longitude": -97.69073180843847,
+          "native_c": 18.580712890625023,
+          "stored_c": 18.600000381469727,
+          "difference_c": 0.019287490844703825
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.3573770676665,
+          "native_longitude": -71.02611906987812,
+          "native_c": 14.205712890625023,
+          "stored_c": 14.199999809265137,
+          "difference_c": -0.005713081359886019
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.837783411672056,
+          "native_longitude": -77.0417285851209,
+          "native_c": 12.580712890625023,
+          "stored_c": 12.600000381469727,
+          "difference_c": 0.019287490844703825
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.8490251556579,
+          "native_longitude": -104.64481448685729,
+          "native_c": 11.830712890625023,
+          "stored_c": 11.850000381469727,
+          "difference_c": 0.019287490844703825
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.893452613767515,
+          "native_longitude": -97.02584687596779,
+          "native_c": 17.518212890625023,
+          "stored_c": 17.5,
+          "difference_c": -0.018212890625022737
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.691939039343126,
+          "native_longitude": -74.18232878348034,
+          "native_c": 12.393212890625023,
+          "stored_c": 12.399999618530273,
+          "difference_c": 0.0067867279052507
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.63264019884428,
+          "native_longitude": -95.29607335226535,
+          "native_c": 23.080712890625023,
+          "stored_c": 23.100000381469727,
+          "difference_c": 0.019287490844703825
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.07995770788199,
+          "native_longitude": -115.15699519663646,
+          "native_c": 23.268212890625023,
+          "stored_c": 23.25,
+          "difference_c": -0.018212890625022737
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.94554697556789,
+          "native_longitude": -118.40164890245543,
+          "native_c": 19.705712890625023,
+          "stored_c": 19.700000762939453,
+          "difference_c": -0.005712127685569612
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.780904183396366,
+          "native_longitude": -87.77218856076486,
+          "native_c": 9.893212890625023,
+          "stored_c": 9.899999618530273,
+          "difference_c": 0.0067867279052507
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.79244720375158,
+          "native_longitude": -80.31272424751506,
+          "native_c": 25.143212890625023,
+          "stored_c": 25.149999618530273,
+          "difference_c": 0.0067867279052507
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.88791478497805,
+          "native_longitude": -93.22964218523694,
+          "native_c": 7.580712890625023,
+          "stored_c": 7.599999904632568,
+          "difference_c": 0.019287014007545622
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 29.995839113164926,
+          "native_longitude": -90.25495049544082,
+          "native_c": 21.955712890625023,
+          "stored_c": 21.950000762939453,
+          "difference_c": -0.005712127685569612
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.78844804448784,
+          "native_longitude": -73.96537002626548,
+          "native_c": 11.830712890625023,
+          "stored_c": 11.850000381469727,
+          "difference_c": 0.019287490844703825
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.39615325756065,
+          "native_longitude": -97.60487400619427,
+          "native_c": 17.768212890625023,
+          "stored_c": 17.75,
+          "difference_c": -0.018212890625022737
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.8634903688032,
+          "native_longitude": -75.22255730111691,
+          "native_c": 12.205712890625023,
+          "stored_c": 12.199999809265137,
+          "difference_c": -0.005713081359886019
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.42225231354415,
+          "native_longitude": -111.99095057081557,
+          "native_c": 23.955712890625023,
+          "stored_c": 23.950000762939453,
+          "difference_c": -0.005712127685569612
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.740724978425526,
+          "native_longitude": -117.18832023217425,
+          "native_c": 20.705712890625023,
+          "stored_c": 20.700000762939453,
+          "difference_c": -0.005712127685569612
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.544596735291496,
+          "native_longitude": -98.455397654791,
+          "native_c": 17.643212890625023,
+          "stored_c": 17.649999618530273,
+          "difference_c": 0.0067867279052507
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.176920180628024,
+          "native_longitude": -85.73690695055558,
+          "native_c": 12.580712890625023,
+          "stored_c": 12.600000381469727,
+          "difference_c": 0.019287490844703825
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.43460501641249,
+          "native_longitude": -122.2987454926159,
+          "native_c": 10.393212890625023,
+          "stored_c": 10.399999618530273,
+          "difference_c": 0.0067867279052507
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.60746293171224,
+          "native_longitude": -122.35764831041581,
+          "native_c": 15.955712890625023,
+          "stored_c": 15.949999809265137,
+          "difference_c": -0.005713081359886019
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.28888332158522,
+          "native_longitude": -74.8297971270589,
+          "native_c": 10.768212890625023,
+          "stored_c": 10.75,
+          "difference_c": -0.018212890625022737
+        }
+      ],
+      "maximum_difference_c": 0.019287490844703825
+    },
+    {
+      "model": "HRRR",
+      "run": "2026-10-07T18:00:00+00:00",
+      "valid_time": "2026-10-08T18:00:00+00:00",
+      "source": {
+        "url": "https://noaa-hrrr-bdp-pds.s3.amazonaws.com/hrrr.20261007/conus/hrrr.t18z.wrfprsf24.grib2",
+        "last_modified": "2026-10-07T19:21:41+00:00",
+        "etag": "\"ceb6748eb32f0c88546215f796dd7b7d\"",
+        "bytes": 434682176,
+        "version_id": null
+      },
+      "index_line": "616:320883689:d=2026100718:TMP:2 m above ground:24 hour fcst:",
+      "index_sha256": "1bd3e5e951f3d3a8a1a620bb59353ee05a6c4cf1023911bf641dd7b4be176709",
+      "range_start": 320883689,
+      "range_end_exclusive": 322122954,
+      "message_sha256": "108807275720d459f05e37cca1215a4e7328672c432e95e246906f0c896ed8d4",
+      "grib_metadata": {
+        "dataDate": 20261007,
+        "dataTime": 1800,
+        "forecastTime": 24,
+        "validityDate": 20261008,
+        "validityTime": 1800,
+        "shortName": "2t",
+        "typeOfLevel": "heightAboveGround",
+        "level": 2,
+        "stepType": "instant",
+        "units": "K",
+        "native_grid": {
+          "Nx": 1799,
+          "Ny": 1059,
+          "DxInMetres": 3000.0,
+          "DyInMetres": 3000.0,
+          "latitudeOfFirstGridPointInDegrees": 21.138123,
+          "longitudeOfFirstGridPointInDegrees": 237.280472,
+          "scanningMode": 64,
+          "radiusInMetres": 6371229,
+          "LaDInDegrees": 38.5,
+          "LoVInDegrees": 262.5,
+          "Latin1InDegrees": 38.5,
+          "Latin2InDegrees": 38.5
+        }
+      },
+      "comparisons": [
+        {
+          "city": "Atlanta",
+          "station": "KATL",
+          "native_latitude": 33.62671858217282,
+          "native_longitude": -84.41810670968249,
+          "native_c": 29.103906250000023,
+          "stored_c": 29.100000381469727,
+          "difference_c": -0.003905868530296175
+        },
+        {
+          "city": "Austin",
+          "station": "KAUS",
+          "native_latitude": 30.18916214389748,
+          "native_longitude": -97.69073180843847,
+          "native_c": 30.103906250000023,
+          "stored_c": 30.100000381469727,
+          "difference_c": -0.003905868530296175
+        },
+        {
+          "city": "Boston",
+          "station": "KBOS",
+          "native_latitude": 42.3573770676665,
+          "native_longitude": -71.02611906987812,
+          "native_c": 22.978906250000023,
+          "stored_c": 23.0,
+          "difference_c": 0.021093749999977263
+        },
+        {
+          "city": "Washington, DC",
+          "station": "KDCA",
+          "native_latitude": 38.837783411672056,
+          "native_longitude": -77.0417285851209,
+          "native_c": 26.166406250000023,
+          "stored_c": 26.149999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Denver",
+          "station": "KDEN",
+          "native_latitude": 39.8490251556579,
+          "native_longitude": -104.64481448685729,
+          "native_c": 27.103906250000023,
+          "stored_c": 27.100000381469727,
+          "difference_c": -0.003905868530296175
+        },
+        {
+          "city": "Dallas",
+          "station": "KDFW",
+          "native_latitude": 32.893452613767515,
+          "native_longitude": -97.02584687596779,
+          "native_c": 29.916406250000023,
+          "stored_c": 29.899999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Newark",
+          "station": "KEWR",
+          "native_latitude": 40.691939039343126,
+          "native_longitude": -74.18232878348034,
+          "native_c": 25.228906250000023,
+          "stored_c": 25.25,
+          "difference_c": 0.021093749999977263
+        },
+        {
+          "city": "Houston (Hobby)",
+          "station": "KHOU",
+          "native_latitude": 29.63264019884428,
+          "native_longitude": -95.29607335226535,
+          "native_c": 32.10390625000002,
+          "stored_c": 32.099998474121094,
+          "difference_c": -0.003907775878928987
+        },
+        {
+          "city": "Las Vegas",
+          "station": "KLAS",
+          "native_latitude": 36.07995770788199,
+          "native_longitude": -115.15699519663646,
+          "native_c": 33.35390625000002,
+          "stored_c": 33.349998474121094,
+          "difference_c": -0.003907775878928987
+        },
+        {
+          "city": "Los Angeles",
+          "station": "KLAX",
+          "native_latitude": 33.94554697556789,
+          "native_longitude": -118.40164890245543,
+          "native_c": 25.041406250000023,
+          "stored_c": 25.049999237060547,
+          "difference_c": 0.008592987060524138
+        },
+        {
+          "city": "Chicago (Midway)",
+          "station": "KMDW",
+          "native_latitude": 41.780904183396366,
+          "native_longitude": -87.77218856076486,
+          "native_c": 20.416406250000023,
+          "stored_c": 20.399999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Miami",
+          "station": "KMIA",
+          "native_latitude": 25.79244720375158,
+          "native_longitude": -80.31272424751506,
+          "native_c": 27.916406250000023,
+          "stored_c": 27.899999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Minneapolis",
+          "station": "KMSP",
+          "native_latitude": 44.88791478497805,
+          "native_longitude": -93.22964218523694,
+          "native_c": 18.166406250000023,
+          "stored_c": 18.149999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "New Orleans",
+          "station": "KMSY",
+          "native_latitude": 29.995839113164926,
+          "native_longitude": -90.25495049544082,
+          "native_c": 27.478906250000023,
+          "stored_c": 27.5,
+          "difference_c": 0.021093749999977263
+        },
+        {
+          "city": "New York City",
+          "station": "KNYC",
+          "native_latitude": 40.78844804448784,
+          "native_longitude": -73.96537002626548,
+          "native_c": 24.666406250000023,
+          "stored_c": 24.649999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Oklahoma City",
+          "station": "KOKC",
+          "native_latitude": 35.39615325756065,
+          "native_longitude": -97.60487400619427,
+          "native_c": 29.416406250000023,
+          "stored_c": 29.399999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Philadelphia",
+          "station": "KPHL",
+          "native_latitude": 39.8634903688032,
+          "native_longitude": -75.22255730111691,
+          "native_c": 24.916406250000023,
+          "stored_c": 24.899999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Phoenix",
+          "station": "KPHX",
+          "native_latitude": 33.42225231354415,
+          "native_longitude": -111.99095057081557,
+          "native_c": 35.85390625000002,
+          "stored_c": 35.849998474121094,
+          "difference_c": -0.003907775878928987
+        },
+        {
+          "city": "San Diego",
+          "station": "KSAN",
+          "native_latitude": 32.740724978425526,
+          "native_longitude": -117.18832023217425,
+          "native_c": 26.478906250000023,
+          "stored_c": 26.5,
+          "difference_c": 0.021093749999977263
+        },
+        {
+          "city": "San Antonio",
+          "station": "KSAT",
+          "native_latitude": 29.544596735291496,
+          "native_longitude": -98.455397654791,
+          "native_c": 30.916406250000023,
+          "stored_c": 30.899999618530273,
+          "difference_c": -0.0164066314697493
+        },
+        {
+          "city": "Louisville",
+          "station": "KSDF",
+          "native_latitude": 38.176920180628024,
+          "native_longitude": -85.73690695055558,
+          "native_c": 27.103906250000023,
+          "stored_c": 27.100000381469727,
+          "difference_c": -0.003905868530296175
+        },
+        {
+          "city": "Seattle",
+          "station": "KSEA",
+          "native_latitude": 47.43460501641249,
+          "native_longitude": -122.2987454926159,
+          "native_c": 16.728906250000023,
+          "stored_c": 16.75,
+          "difference_c": 0.021093749999977263
+        },
+        {
+          "city": "San Francisco",
+          "station": "KSFO",
+          "native_latitude": 37.60746293171224,
+          "native_longitude": -122.35764831041581,
+          "native_c": 17.103906250000023,
+          "stored_c": 17.100000381469727,
+          "difference_c": -0.003905868530296175
+        },
+        {
+          "city": "Trenton",
+          "station": "KTTN",
+          "native_latitude": 40.28888332158522,
+          "native_longitude": -74.8297971270589,
+          "native_c": 23.416406250000023,
+          "stored_c": 23.399999618530273,
+          "difference_c": -0.0164066314697493
+        }
+      ],
+      "maximum_difference_c": 0.021093749999977263
+    }
+  ]
+}

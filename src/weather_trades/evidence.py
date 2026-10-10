@@ -11,6 +11,7 @@ BOUND_FILES = [
     "reports/forecast-samples.csv",
     "reports/station-validation.csv",
     "reports/fee-evidence.json",
+    "reports/archive-runs.json",
 ]
 MARKET_FIELDS = [
     "ticker",
@@ -35,14 +36,20 @@ def digest(path):
 
 def save(markets, series, quotes, signals):
     used_series = {m["series_ticker"] for m in markets}
-    decisions = {s["market"]: s["decision_ts"] for s in signals}
+    decisions = {}
+    for signal in signals:
+        decisions.setdefault(signal["market"], set()).update(
+            [signal["decision_ts"], signal["paired_decision_ts"]]
+        )
     retained = {}
     for ticker, candles in quotes.items():
         selected = []
         for c in candles:
-            minute = (c["end_period_ts"] - decisions[ticker]) / 60
-            # Exact union (plus harmless intervening minutes) of frozen quote windows.
-            if 2 <= minute <= 21 or 62 <= minute <= 67 or 122 <= minute <= 127:
+            # Union of all model-specific, shared-clock, and sensitivity windows.
+            if any(
+                2 <= (c["end_period_ts"] - decision) / 60 <= 21
+                for decision in decisions[ticker]
+            ):
                 selected.append(
                     [
                         c["end_period_ts"],

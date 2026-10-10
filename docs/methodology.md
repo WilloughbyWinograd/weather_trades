@@ -4,17 +4,29 @@ This is personal, hypothetical research. No trading interface or credentials are
 
 ## Initial study window
 
-Evaluate August 28 through October 8, 2026, inclusive. Development dates end September 24; untouched evaluation starts September 25. These contiguous dates are chosen for recent settled markets, the published July fee schedule, and the free forecast request budget. No parameter tuning is permitted after viewing results. The fixed window is retained when a source run is missing; dates are not replaced. This initial window is not the full available historical archive.
+Evaluate August 28 through October 8, 2026, inclusive. Development dates end September 24; the original reserved evaluation starts September 25. The corrected calculation reuses previously viewed dates. It is not a new untouched evaluation. These contiguous dates are chosen for recent settled markets, the published July fee schedule, and the free forecast request budget. No parameter tuning is permitted after viewing results. The fixed window is retained when a source run is missing; dates are not replaced. This initial window is not the full available historical archive.
 
-The first comparison uses 12 and 18 UTC individual runs initialized on the day before the target date. Decisions occur at 23 UTC, assuming five hours for release of the 18 UTC run. Both models use identical runs, station locations, target dates and decision times. This common evening schedule is a restricted baseline, not a replay of every native update. Release timestamps are assumed, not historically observed. Sensitivities use six and seven hours and longer quote delays. The evaluation period also receives the same conservative fill scenario.
+The comparison uses 12 and 18 UTC runs initialized on the day before the target date. Each model acts after its own 18 UTC distribution is complete. Both required runs must have publication evidence. The shared-time sensitivity waits for both models. Stations, target dates, signals, fees, and portfolio rules are identical.
+
+The decision follows the first whole-minute poll at or after the completion marker, plus one minute for processing. Entry then follows the declared delay and a later completed price interval. No assumed five-, six-, or seven-hour forecast release delay remains in the corrected calculation. The 18 UTC run is the latest eligible complete-day run at these decisions. Intervening HRRR runs extend only 18 hours and cannot cover the entire target day.
 
 ## Forecast and station evidence
 
-Use Open-Meteo's explicitly selected `gfs_global` and `gfs_hrrr` single-run products. Never use best-match, seamless, reanalysis, or a current forecast in place of an archived run. Requests disable elevation adjustment and select the nearest grid cell. Retain returned grid coordinates, source request and checksum. Values are provider-processed hourly forecasts, not raw NOAA GRIB. The maximum of hourly samples can miss a between-hour maximum.
+Read `temperature_2m.om` and `meta.json` from Open-Meteo's public `data_run/<model>/<YYYY/MM/DD/HHmmZ>/` distribution. The model identifiers are `ncep_gfs013` and `ncep_hrrr_conus`. These files preserve specific operational runs. Do not use reanalysis, best-match, seamless forecasts, observations, or later runs as substitutes.
 
-The single-run documentation supports run identity, not proof of historical accessibility. Open-Meteo's metadata documentation exposes the latest run's availability and recommends ten additional minutes for server propagation. It does not supply the missing per-run historical evidence for this study. Retrieval timestamps in the manifest record this research session, not past publication. Therefore the results must remain an exploratory simulation with assumed availability. A verified replay requires historical access evidence for every consumed run and field, along with a reproducible processing path. A later object modification timestamp alone cannot establish first availability or prove that an earlier copy did not exist.
+Open-Meteo documents that it writes the run metadata after completing the run-file distribution. The program requires this completion marker and its original reference time, valid times, and temperature-variable entry. The marker's object timestamp must follow the temperature object's timestamp. The marker must be a single-part object with a matching content checksum. Amazon S3 provides strong read-after-write consistency. Together, these records establish that the exact source distribution existed by the marker time. This is a conservative available-by time, not a claim about the earliest native NOAA release.
 
-After the initial calculation, all 168 study-run temperature objects were checked through the provider's public archive. Eighty-three of 84 GFS objects and all 84 HRRR objects were present. GFS object modification times followed initialization by 5.36–5.66 hours; HRRR by 1.84–2.77 hours. All 42 current-cycle GFS objects were modified after the first assumed baseline entry. The absent GFS object matches the missing run already excluded. This evidence leaves the five-hour baseline unsuitable for an exact-access claim. The predeclared six- and seven-hour sensitivities remain assumed-access simulations. No strategy parameters were changed in response to profitability.
+Conditional byte-range requests pin each temperature file to its entity tag. The program checks the returned byte range, timestamp, and identity. It checks both object identities again after extraction. Every retained byte range has a checksum. The full source audit re-decodes those bytes without network access. Missing markers, mismatched identities, later rewrites, and incomplete fields cannot inherit an assumed release time.
+
+The evidence concerns direct access to these public files. It does not claim historical forecast API routing, an actual client download, or measured processing latency. The declared polling and processing times remain simulated.
+
+All 168 requested model runs have source records: 83 GFS runs and 84 HRRR runs are complete. The GFS run initialized September 14 at 12 UTC is absent. The 24 affected September 15 city-days remain excluded from both models. No replacement date or run is selected.
+
+Extract the nearest model grid cell to each settlement station. Preserve stored 32-bit Celsius values, with no API rounding or elevation adjustment. Open-Meteo's pinned grid definition identifies dimensions and orientation. Native NOAA HRRR headers supply the precise grid origin and spacing. Rounded bounds selected an adjacent Trenton cell; the corrected extraction uses the native coordinates.
+
+The source check compares both models and cycles on the first, middle, and final source dates. Twelve native NOAA fields provide 288 station comparisons at forecast lead 24 hours. It independently decodes initialization, valid time, level, units, and grid coordinates. The 0.051-degree Celsius tolerance accommodates the archive's temperature quantization. This is a bounded independent check; every consumed hour is also checked against the exact stored archive bytes.
+
+The maximum of hourly samples can miss a between-hour temperature maximum. Native NOAA values and the archive's compressed values can differ slightly. The former forecast API rounded values to 0.1 degree Celsius. Corrected signals therefore can change from both source precision and publication timing. No trading threshold or portfolio limit was adjusted in response to returns.
 
 A contract's own CLI identifier is joined to The Weather Company's dated station metadata. NOAA station metadata supplies coordinates. Current coordinate metadata is not an independently audited historical relocation record. Provider station labels can differ from older National Weather Service market definitions; earlier rules must not be silently inherited.
 
@@ -47,15 +59,18 @@ Reproduce ledger cash from chronological entry and settlement events. Reject inc
 - [NOAA weather station API](https://www.weather.gov/documentation/services-web-api)
 - [National Weather Service climate observation day](https://www.weather.gov/lot/weather_observations_faq)
 - [Open-Meteo single-run archive](https://open-meteo.com/en/docs/single-runs-api)
-- [Open-Meteo availability semantics](https://open-meteo.com/en/docs/model-updates)
+- [Open-Meteo run-file publication sequence and retention](https://github.com/open-meteo/open-data#updates-to-real-time-weather-forecasts)
+- [Pinned Open-Meteo grid implementation](https://github.com/open-meteo/open-meteo/blob/f625df2c2b2d29d7837b1c71660fb226b1864f9b/Sources/App/Gfs/GfsDomain.swift)
+- [Amazon S3 consistency](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html#ConsistencyModel)
+- [NOAA HRRR products and schedule](https://www.emc.ncep.noaa.gov/emc/pages/numerical_forecast_systems/hrrr.php)
 - [Open-Meteo noncommercial limits and terms](https://open-meteo.com/en/terms)
 
-Forecast data attribution: Open-Meteo, NOAA GFS and NOAA HRRR, under Open-Meteo's CC BY 4.0 data license. The free API is used only for this personal hypothetical study.
+Forecast data attribution: Open-Meteo, NOAA GFS and NOAA HRRR, under Open-Meteo's CC BY 4.0 data license. Public file access is used only for this personal hypothetical study.
 
 ## Source failures and reproducibility
 
-An explicit archived-run error remains a source gap, even when the server returns HTTP status 200. Every requested station, day, model, run, and day definition receives a row. Incomplete acquisition stops the replay. Missing runs exclude affected city-days from both sides of the paired comparison.
+An absent archived run remains a source gap. Invalid source identities or chronology stop acquisition. Every requested station, day, model, run, and day definition receives a row. Incomplete acquisition stops the replay. Missing runs exclude affected city-days from both sides of the paired comparison.
 
-The compact replay snapshot preserves contract metadata and the exact quote windows used by every scenario. It binds the strategy, station table, forecast reductions, settlement validation, and fee audit by checksum. The offline replay does not contact a data provider. Raw response files remain outside Git; their public requests and checksums are recorded in the source manifest.
+The compact replay snapshot preserves contract metadata and the exact quote windows used by every scenario. It binds the strategy, station table, forecast reductions, settlement validation, and fee audit by checksum. The offline replay does not contact a data provider. Raw response files remain outside Git. Public request checksums, exact run-file identities, and binary-range checksums are recorded in the committed manifests. Native NOAA check receipts record the exact field range and checksum. The public archive has limited retention, so full reacquisition is time-limited. Compact offline replay does not depend on that retention.
 
 Each scenario reports maximum committed principal and average committed principal from first entry through final settlement. The latter excludes time before the first entry.

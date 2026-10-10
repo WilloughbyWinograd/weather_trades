@@ -1,6 +1,6 @@
 """Paired forecast signals and chronological, cash-constrained hypothetical portfolios."""
 
-import csv, json
+import csv, json, math
 from collections import defaultdict, Counter
 from decimal import Decimal, ROUND_HALF_UP
 from .http import ROOT
@@ -46,6 +46,24 @@ def signals(day_basis="standard", source=None):
         for r in rows("reports/forecast-samples.csv")
         if r["day_basis"] == day_basis and r["status"] == "complete"
     }
+    from .archive import publication_time
+
+    archive_records = {
+        (r["model"], r["run"]): r
+        for r in json.loads((ROOT / "reports/archive-runs.json").read_text())
+        if r["status"] == "complete"
+    }
+    # Every complete forecast must be bound to the original public object and
+    # completion marker. An absent marker cannot inherit a fixed release lag.
+    for r in forecasts.values():
+        record = archive_records[(r["model"], r["run"])]
+        if (
+            timestamp(r["available_at"]) != publication_time(record)
+            or r["completion_etag"] != record["completion_object"]["etag"]
+            or r["source_etag"] != record["data_object"]["etag"]
+            or r["source_url"] != record["data_object"]["url"]
+        ):
+            raise ValueError("Forecast has no matching publication evidence")
     events = defaultdict(list)
     for m in markets:
         events[m["event_ticker"]].append(m)
@@ -74,6 +92,14 @@ def signals(day_basis="standard", source=None):
                 {"event": event, "reason": "paired complete forecast unavailable"}
             )
             continue
+        latest_paired_source = max(
+            timestamp(forecasts[k]["available_at"]) for k in keys
+        )
+        poll = cfg["availability_poll_seconds"]
+        paired_decision = (
+            math.ceil(latest_paired_source / poll) * poll
+            + cfg["processing_buffer_seconds"]
+        )
         ms = sorted(ms, key=lambda m: float(m.get("floor_strike", -10000)))
         if (
             len(ms) < 2
@@ -87,6 +113,19 @@ def signals(day_basis="standard", source=None):
         for model in cfg["models"]:
             before = forecasts[(cli, day, model, cfg["previous_cycle_utc_hour"])]
             after = forecasts[(cli, day, model, cfg["current_cycle_utc_hour"])]
+            ready = max(
+                timestamp(before["available_at"]), timestamp(after["available_at"])
+            )
+            decision = math.ceil(ready / poll) * poll + cfg["processing_buffer_seconds"]
+            if decision >= timestamp(after["first_valid"]):
+                excluded.append(
+                    {
+                        "event": event,
+                        "model": model,
+                        "reason": "forecast not ready before target day",
+                    }
+                )
+                continue
             previous = float(before["high_f"])
             current = float(after["high_f"])
             revision = (current - previous) / 1.8
@@ -121,7 +160,6 @@ def signals(day_basis="standard", source=None):
                 continue
             idx = old[0] + (1 if new[0] > old[0] else -1)
             m = ms[idx]
-            decision = timestamp(after["run"]) + cfg["release_lag_hours"] * 3600
             if any(
                 timestamp(x["created_time"]) > decision
                 or timestamp(x["open_time"]) > decision
@@ -161,6 +199,14 @@ def signals(day_basis="standard", source=None):
                     "current_high_f": current,
                     "revision_c": revision,
                     "decision_ts": decision,
+                    "paired_decision_ts": paired_decision,
+                    "current_available_at": after["available_at"],
+                    "previous_available_at": before["available_at"],
+                    "current_source_etag": after["source_etag"],
+                    "previous_source_etag": before["source_etag"],
+                    "current_source_url": after["source_url"],
+                    "previous_source_url": before["source_url"],
+                    "availability_evidence": "exact public run objects and completed-run markers",
                     "settlement_ts": timestamp(m["settlement_ts"]),
                     "winner": m["result"] == "yes",
                     "phase": "evaluation"
@@ -173,20 +219,29 @@ def signals(day_basis="standard", source=None):
 
 
 def prepare(signals):
-    bymarket = {}
+    windows = {}
     for s in signals:
-        if s["market"] not in bymarket:
-            bymarket[s["market"]] = candles(
-                s["market_record"], s["decision_ts"], s["decision_ts"] + 3 * 3600
-            )
-            print("quotes", s["market"], len(bymarket[s["market"]]), flush=True)
+        window = windows.setdefault(
+            s["market"],
+            {
+                "market": s["market_record"],
+                "start": s["decision_ts"],
+                "end": s["paired_decision_ts"] + 3600,
+            },
+        )
+        window["start"] = min(window["start"], s["decision_ts"])
+        window["end"] = max(window["end"], s["paired_decision_ts"] + 3600)
+    bymarket = {}
+    for ticker, window in windows.items():
+        bymarket[ticker] = candles(window["market"], window["start"], window["end"])
+        print("quotes", ticker, len(bymarket[ticker]), flush=True)
     return bymarket
 
 
 def replay(
     signals,
     market_candles,
-    lag_hours=5,
+    paired_clock=False,
     delay=1,
     conservative=False,
     fee_rounding="0.0001",
@@ -238,16 +293,14 @@ def replay(
     for s in signals:
         if phase and s["phase"] != phase:
             continue
-        q = quote(
-            market_candles[s["market"]],
-            s["decision_ts"] + (lag_hours - cfg["release_lag_hours"]) * 3600,
-            delay,
-            conservative,
-        )
+        decision = s["paired_decision_ts"] if paired_clock else s["decision_ts"]
+        if decision < max(
+            timestamp(s["previous_available_at"]), timestamp(s["current_available_at"])
+        ):
+            raise ValueError("Entry decision precedes a consumed forecast")
+        q = quote(market_candles[s["market"]], decision, delay, conservative)
         base = {k: v for k, v in s.items() if k != "market_record"}
-        base["decision_ts"] = (
-            s["decision_ts"] + (lag_hours - cfg["release_lag_hours"]) * 3600
-        )
+        base["decision_ts"] = decision
         if not q:
             base["status"] = "no later eligible quote"
             ledger.append(base)
@@ -386,19 +439,20 @@ def run(offline=False):
         "reports/signals.csv",
         [{k: v for k, v in s.items() if k != "market_record"} for s in sig],
     )
-    quotes = source[2] if source else prepare(sig)
+    civil, _, _ = signals("civil", source=source)
+    quotes = source[2] if source else prepare(sig + civil)
     result = []
     scenarios = [
         ("baseline", {}),
         ("conservative", {"conservative": True}),
         ("volume_capped", {"conservative": True, "volume_cap": True}),
-        ("release_6h", {"lag_hours": 6}),
-        ("release_7h", {"lag_hours": 7}),
+        ("paired_ready", {"paired_clock": True}),
         ("delay_5m", {"delay": 5}),
         ("delay_15m", {"delay": 15}),
         ("cent_fees", {"fee_rounding": "0.01"}),
         ("development", {"phase": "development"}),
         ("evaluation", {"phase": "evaluation"}),
+        ("evaluation_paired_ready", {"phase": "evaluation", "paired_clock": True}),
         ("evaluation_conservative", {"phase": "evaluation", "conservative": True}),
         (
             "evaluation_volume_capped",
@@ -413,11 +467,9 @@ def run(offline=False):
             result.append({"model": model, "scenario": name, **summary})
             write_csv("reports/ledger-" + model + "-" + name + ".csv", ledger)
             write_csv("reports/cash-" + model + "-" + name + ".csv", events)
-    civil, _, _ = signals("civil", source=source)
-    civilquotes = source[2] if source else prepare(civil)
     for model in settings()["models"]:
         summary, ledger, events = replay(
-            [s for s in civil if s["model"] == model], civilquotes
+            [s for s in civil if s["model"] == model], quotes
         )
         result.append({"model": model, "scenario": "civil_day", **summary})
         write_csv("reports/ledger-" + model + "-civil_day.csv", ledger)
@@ -425,7 +477,7 @@ def run(offline=False):
         evidence.save(
             json.loads((ROOT / "data/raw/markets.json").read_text()),
             series(),
-            {**quotes, **civilquotes},
+            quotes,
             sig + civil,
         )
     (ROOT / "reports/results.json").write_text(json.dumps(result, indent=2))

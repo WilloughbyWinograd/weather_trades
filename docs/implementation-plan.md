@@ -4,9 +4,9 @@
 
 **Architecture:** A read-only Python pipeline joins market histories, versioned settlement stations, and archived forecast runs. A chronological simulator evaluates both models under identical rules. Compact reports retain every city, including cities with missing data or no HRRR coverage.
 
-**Technology:** Python, HTTP requests, SQLite, and compact tabular exports. Use existing scientific readers only when raw forecast files are necessary. Pin dependencies during implementation.
+**Technology:** Python, conditional public byte-range requests, pinned OM-file and GRIB readers, and compact tabular exports.
 
-**Status:** Implementation authorized; initial capital changed to $100 per model. Repository creation and documentation publication are complete deliverables for this stage. Acquisition, strategy implementation, and backtesting remain future work.
+**Status:** The initial six-week study and publication-time correction are implemented. Each model receives $100. Longer verified history remains future work. The current protocol is in [methodology.md](methodology.md); the sections below retain the broader research plan.
 
 ## 1. Settled decisions
 
@@ -119,11 +119,11 @@ Create `config/strategy.json` and `docs/methodology.md` before inspecting profit
 
 ### Paired comparison
 
-Use identical stations, contracts, target dates, and decision times. At each decision time, choose the latest available complete forecast for each model. Do not select a run by initialization time alone.
+Use identical stations, contracts, and target dates. Report each model at its own verified publication time and at a shared time after both models are available. At each decision time, choose the latest available complete forecast for each model. Do not select a run by initialization time alone.
 
 Require a preceding eligible forecast from the same model for the same target day. A model switch cannot trigger a revision signal.
 
-Use a common decision schedule anchored to newly available long-range cycles for the primary comparison. Separately evaluate each model at its native update schedule. Report sample-size differences and forecast age.
+The current comparison uses the 12 and 18 UTC long-range runs. Each model acts after its own verified completion marker. A shared-time sensitivity waits for both models. Other daily update pairs remain future work.
 
 ### Baseline signal
 
@@ -149,7 +149,7 @@ Process signals chronologically. Break identical-time ties by canonical city ide
 
 Also calculate unconstrained per-signal results. This separates model quality from the small portfolio's allocation constraint.
 
-Use provider publication evidence when available. Where it is absent, apply a documented conservative release-lag assumption and show sensitivity to longer delays. Label these results as timing-assumed.
+Require exact source identity and publication evidence before every simulated entry. Missing evidence excludes a run or stops acquisition. Do not replace missing evidence with a fixed release delay.
 
 For minute candles, enter using a quote from a later completed interval after the signal and declared delay. Never select the candle low using hindsight. Report a quoted-price scenario separately from a conservative fill scenario. Do not claim a validated fill when historical depth is unavailable.
 
@@ -159,7 +159,7 @@ Create `src/weather_trades/simulator.py`, `src/weather_trades/fees.py`, and `src
 
 The engine must process forecasts, signals, entries, settlements, fees, and cash releases in time order. Apply the fee schedule valid for the market and date, including rounding. Exclude or flag periods with unknown fees.
 
-Maintain a ledger with model, city, station, market, source run, availability assumption, decision time, price, quantity, fees, result, and cash balance.
+Maintain a ledger with model, city, station, market, source run, source identity, publication time, decision time, price, quantity, fees, result, and cash balance.
 
 Reject future information, duplicate signals, incomplete target days, unresolved station mappings, stale quotes, and negative cash balances.
 
@@ -179,7 +179,7 @@ For trading, report simulated net return, fees, win rate, drawdown, exposure, tu
 
 Split each usable timeline chronologically into development and untouched evaluation periods. Publish exact boundaries before tuning. If data is too sparse, state that instead of reporting a strong conclusion.
 
-Do not tune on the evaluation period or remove losing cities. Show sensitivity to forecast-release lag, trading delay, spreads, and fills. Account for shared weather systems when describing uncertainty; cities are not independent samples.
+Do not tune on the evaluation period or remove losing cities. Show sensitivity to shared publication timing, trading delay, spreads, and fills. Account for shared weather systems when describing uncertainty; cities are not independent samples.
 
 A more accurate temperature forecast does not automatically produce more profitable trades. Evaluate both questions separately.
 
@@ -208,15 +208,15 @@ reports/
   summary.md
 ```
 
-These paths and commands are planned; they do not exist as functioning software yet.
+These paths are implemented for the initial study. See the README for the complete acquisition and replay sequence.
 
-1. Implement `python -m weather_trades.cli inventory` to enumerate all markets and cities.
-2. Implement `python -m weather_trades.cli stations` to build verified coordinate mappings.
-3. Implement `python -m weather_trades.cli probe` to establish bounded source access and costs.
-4. Implement `python -m weather_trades.cli acquire` to populate the approved free-data manifest.
-5. Implement `python -m weather_trades.cli backtest` to replay the frozen comparison.
-6. Implement `python -m weather_trades.cli report` to produce city coverage and comparative results.
-7. Implement `python -m weather_trades.cli verify` for the smallest meaningful end-to-end source and ledger checks.
+1. Run `python -m weather_trades.cli inventory` to enumerate all markets and cities.
+2. Run `python -m weather_trades.cli acquire` to populate the approved market-data manifest.
+3. Run `python -m weather_trades.cli stations` to build verified coordinate mappings.
+4. Run `python -m weather_trades.cli forecasts` and `check-noaa` for run-file acquisition and bounded native source checks.
+5. Run `python -m weather_trades.cli backtest` to replay the frozen comparison.
+6. Run `python -m weather_trades.cli report` to produce city coverage and comparative results.
+7. Run `python -m weather_trades.cli verify` for the smallest meaningful end-to-end source and ledger checks.
 
 Keep compact metadata, configuration, reports, and checksums in Git. Do not commit bulk weather files, databases, credentials, or raw media. Avoid new paid storage. If durable bulk storage is required, report the resource decision before acquiring it.
 
@@ -224,8 +224,8 @@ Keep compact metadata, configuration, reports, and checksums in Git. Do not comm
 
 - All discoverable weather-market cities are reconciled to the coverage ledger.
 - Every included contract uses verified station coordinates and the correct settlement rules.
-- Paired model samples match by station, contract, date, and decision time.
-- Forecasts include documented availability times or explicitly labeled timing assumptions.
+- Paired model samples match by station, contract, and date. The shared-time scenario also matches decision time.
+- Every consumed forecast includes exact source identity and publication evidence before entry.
 - Historical prices, fees, quantities, delays, and cash constraints are represented.
 - Every simulated trade has a reproducible source trail.
 - Missing coverage and uncertain fills remain visible in final results.
