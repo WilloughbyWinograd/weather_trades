@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "raw_quote_windows_verified": 584,
+  "unchanged_entries": 584,
+  "policy_records_verified": 4088,
+  "independent_fee_and_profit_reconciliation": true,
+  "network_disabled_replay_identical": true,
+  "inputs_sha256": "aae93c6e300713d786fa7cb14c0fb3e643dd0186722579125d0726dc270386a9",
+  "output_sha256": {
+    "reports/exit-comparison/ledger.csv": "bf3b5b27f66afb72a1eb5f0c0761aa51c9fbbd534bc472b78b0c8a9e1e3197d3",
+    "reports/exit-comparison/comparison.csv": "85bbe2f807caa3714e547ecc2206471b08e324c071906ce14559ba5e0ddadb3b",
+    "reports/exit-comparison/summary.json": "99d12538ebcd47dadbbfd6f0089d90b388e280f38c6af153a973c742487ec586",
+    "reports/exit-comparison/summary.md": "a66123c8ae4be7b59a9d0d25b923980053b2b03173d049195ccb435c14990863"
+  }
+}

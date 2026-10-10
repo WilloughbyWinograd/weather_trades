@@ -23,6 +23,9 @@ def main():
             "tweet-prices",
             "replay-tweet-prices",
             "verify-tweet-prices",
+            "compare-exits",
+            "replay-exits",
+            "verify-exits",
         ],
     )
     a = p.parse_args()
@@ -84,6 +87,18 @@ def main():
         run()
     elif a.command == "verify-tweet-prices":
         from .price_response import verify
+
+        verify()
+    elif a.command == "compare-exits":
+        from .exits import acquire
+
+        acquire()
+    elif a.command == "replay-exits":
+        from .exits import run
+
+        run()
+    elif a.command == "verify-exits":
+        from .exits import verify
 
         verify()
 

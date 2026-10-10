@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-10-10T18:36:08.232007+00:00",
+  "entry_source": "reports/tweet-price-response/signals.csv",
+  "entry_rule": "Unchanged eligible entries from the published tweet-method retest; no re-selection by exit outcome.",
+  "entry_budget_dollars": 5,
+  "models": [
+    "GFS",
+    "HRRR"
+  ],
+  "study_start": "2026-08-28",
+  "study_end": "2026-10-08",
+  "selection_end": "2026-09-24",
+  "later_period_start": "2026-09-25",
+  "quote_wait_minutes": 15,
+  "trigger_execution_delay_seconds": 60,
+  "trigger_time_cap_minutes": 360,
+  "exit_quote_rule": "First recorded valid positive bid at or after the intended exit, within 15 minutes. No forward filling. Targets and stops use observed minute-close bids; execute at a later quote after 60 seconds. Missing exits remain unresolved.",
+  "fee_rounding_dollars": "0.0001",
+  "fee_formula": "0.07 * contracts * price * (1-price), charged on purchase and sale; no settlement fee.",
+  "policies": [
+    {
+      "name": "15 minutes",
+      "kind": "timed",
+      "minutes": 15
+    },
+    {
+      "name": "60 minutes",
+      "kind": "timed",
+      "minutes": 60
+    },
+    {
+      "name": "3 hours",
+      "kind": "timed",
+      "minutes": 180
+    },
+    {
+      "name": "6 hours",
+      "kind": "timed",
+      "minutes": 360
+    },
+    {
+      "name": "Gain 5 cents / lose 5 cents",
+      "kind": "target_stop",
+      "target_cents": 5,
+      "stop_cents": 5
+    },
+    {
+      "name": "Gain 10 cents / lose 5 cents",
+      "kind": "target_stop",
+      "target_cents": 10,
+      "stop_cents": 5
+    },
+    {
+      "name": "Settlement",
+      "kind": "settlement"
+    }
+  ],
+  "comparison": "Primary ranking uses the same entries with observed exits under every policy. Also report each policy coverage and all observed exits. Select a policy on the earlier dates and assess it on the later dates without retuning.",
+  "uncertainty": "95 percent percentile bootstrap interval; resample target dates as clusters, 2000 draws, seed 20261010. Descriptive exploratory estimates, not untouched evaluation or adjusted for selecting a winner.",
+  "scope": "Historical paper comparison on already studied Kalshi dates, not the full Polymarket tweet deployment. No real orders, no portfolio or compounding, no executable depth evidence. Extended exit rules frozen before the comparison."
+}

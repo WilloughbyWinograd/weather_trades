@@ -6,6 +6,8 @@ Compare Global Forecast System (GFS) and High-Resolution Rapid Refresh (HRRR) fo
 
 The [tweet-method retest](reports/tweet-price-response/summary.md) measures quoted price changes 15 and 60 minutes after forecast-change signals. It uses the tweet's one-degree Celsius step adapted to Fahrenheit brackets and hourly polling. It calculates no portfolio return or settlement exit. Reproduce it with `python -m weather_trades.cli replay-tweet-prices`.
 
+The [selling-rule comparison](reports/exit-comparison/summary.md) tests four timed exits, two profit-target/stop-loss combinations, and settlement on the same entries, including purchase and sale fees. Reproduce it with `python -m weather_trades.cli replay-exits`.
+
 Each model receives a separate hypothetical **$100**, shared across all eligible cities. The initial study covers August 28–October 8, 2026. September 25–October 8 is the original reserved evaluation period. This correction reuses those dates; it is not a new untouched evaluation. Trading parameters remain frozen.
 
 The program uses actual settlement-station coordinates, individual archived model runs, later bid and ask candles, dated contract outcomes, fees, and cash constraints. Results assume fills because historical executable quantities are unavailable. Missing source runs remain explicit gaps.
