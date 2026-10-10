@@ -6,7 +6,7 @@
 
 **Technology:** Python, HTTP requests, SQLite, and compact tabular exports. Use existing scientific readers only when raw forecast files are necessary. Pin dependencies during implementation.
 
-**Status:** Plan only. Repository creation and documentation publication are complete deliverables for this stage. Acquisition, strategy implementation, and backtesting remain future work.
+**Status:** Implementation authorized; initial capital changed to $100 per model. Repository creation and documentation publication are complete deliverables for this stage. Acquisition, strategy implementation, and backtesting remain future work.
 
 ## 1. Settled decisions
 
@@ -143,7 +143,7 @@ This is a reproducible interpretation of the post, not a claim to reproduce its 
 
 ### Capital and timing
 
-Use separate hypothetical $50 portfolios for GFS and HRRR. Limit each entry to $5 including fees, with at most five open positions. Respect contract quantity increments and minimum orders. Keep funds locked until the simulated exit or settlement.
+Use separate hypothetical $100 portfolios for GFS and HRRR. Limit each entry to $5 including fees, with at most five open positions. Respect contract quantity increments and minimum orders. Keep funds locked until the simulated exit or settlement.
 
 Process signals chronologically. Break identical-time ties by canonical city identifier, not by eventual returns. Report unfilled signals and capital-blocked signals.
 

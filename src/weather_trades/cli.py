@@ -1,0 +1,72 @@
+"""Explicit read-only acquisition, research replay, report and verification commands."""
+
+import argparse
+
+
+def main():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument(
+        "command",
+        choices=[
+            "inventory",
+            "stations",
+            "acquire",
+            "forecasts",
+            "validate",
+            "backtest",
+            "replay",
+            "report",
+            "verify",
+            "locations",
+            "availability",
+        ],
+    )
+    a = p.parse_args()
+    if a.command == "inventory":
+        from .inventory import build
+
+        build()
+    elif a.command == "stations":
+        from .stations import build
+
+        build()
+    elif a.command == "acquire":
+        from .markets import acquire
+
+        acquire()
+    elif a.command == "forecasts":
+        from .forecasts import acquire
+
+        acquire()
+    elif a.command == "validate":
+        from .validation import validate_stations
+
+        validate_stations()
+    elif a.command == "backtest":
+        from .simulator import run
+
+        run()
+    elif a.command == "replay":
+        from .simulator import run
+
+        run(offline=True)
+    elif a.command == "report":
+        from .report import build
+
+        build()
+    elif a.command == "verify":
+        from .verify import verify
+
+        verify()
+    elif a.command == "locations":
+        from .location_scan import scan
+
+        scan()
+    elif a.command == "availability":
+        from .publication import audit
+
+        audit()
+
+
+if __name__ == "__main__":
+    main()

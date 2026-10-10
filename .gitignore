@@ -7,6 +7,8 @@ __pycache__/
 .jj/
 data/raw/
 data/processed/
+data/*.log
+*.egg-info/
 *.sqlite
 *.sqlite3
 *.grib

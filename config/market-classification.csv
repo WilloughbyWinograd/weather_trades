@@ -1,0 +1,425 @@
+series,title,frequency,classification,cities,sample_market,source,station_status
+FEMA,States that declare natural disasters,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHAUS,Highest temperature in Austin,daily,daily high,Austin,KXHIGHAUS-26OCT11-T97,series catalog and actual market rule sample,see dated contract mappings
+HMONTHRANGE,Monthly Temperature Increase (ºC),custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXJACKSONOPEN,Jackson Hole Mountain Resort Opening,annual,other weather product,Jackson Hole Mountain Resort,KXJACKSONOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKIAH,Average Weekly Temp in Houston (Bush) ,weekly,other weather product,Houston,KXAVGTKIAH-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+TEMPMON,Global monthly temperature average,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINDNYC,Daily Rain - NYC,daily,other weather product,New York City,KXRAINDNYC-260919-0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTSAN,High Temperature San Diego,daily,daily high,San Diego,KXHIGHTSAN-26OCT11-T77,series catalog and actual market rule sample,see dated contract mappings
+KXWEEKHTLAS,Weekly high temperature Las Vegas,weekly,other weather product,Las Vegas,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSIERRAOPEN,Sierra-at-Tahoe Opening,annual,named facility; outside daily-high strategy,,KXSIERRAOPEN-27-27DEC26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXNEXTHURDATE,Next hurricane date,custom,non-city environmental product,,KXNEXTHURDATE-26DEC01-26SEP15,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWHISTLEROPEN,Whistler Blackcomb opening,one_off,other weather product,Whistler,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTSEA,Seattle Maximum Temperature Daily,daily,daily high,Seattle,KXHIGHTSEA-26OCT11-T65,series catalog and actual market rule sample,see dated contract mappings
+KXEMERGENCYWIL,Natural disaster hits Wilmington,custom,other weather product,Wilmington,EMERGENCYWIL-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWPHIL,Lowest temperature in Philadelphia,daily,other weather product,Philadelphia,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXMSPSNOWM,Minneapolis monthly snowfall,monthly,other weather product,Minneapolis,KXMSPSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWLAX,Lowest temperature in Los Angeles,daily,other weather product,Los Angeles,,series catalog and actual market rule sample,outside initial daily-high strategy
+GTEMP,Hottest year ever,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURPATHGENERAL,HURRICANE GENERAL LANDFALL,one_off,non-city environmental product,,KXHURPATHGENERAL-25,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHNY,Highest temperature in NYC,daily,daily high,New York City,KXHIGHNY-26OCT11-T69,series catalog and actual market rule sample,see dated contract mappings
+KXMAXTEMP100,Max temp 100,custom,no available market; location unspecified,,,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXHOLIDAYTMAX,Max temperature holiday by city,custom,other weather product,"Atlanta;Austin;Boston;Chicago;Dallas;Denver;Houston;Las Vegas;Los Angeles;Miami;Minneapolis;New Orleans;New York City;Oklahoma City;Philadelphia;Phoenix;San Antonio;San Francisco;Seattle;Washington, DC",KXHOLIDAYTMAX-260704-SFO,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXARCTICICEMAX,Arctic sea ice max extent,custom,non-city environmental product,,KXARCTICICEMAX-26APR01-T15.2,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURPATHHOU,hurricane hits houston,custom,other weather product,Houston,KXHURPATHHOU-25,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTDEN,Lowest temperature in Denver,daily,other weather product,Denver,KXLOWTDEN-26OCT11-T61,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTEMP,US average temp,monthly,non-city environmental product,,AVGTEMP-23AUG-T80,series catalog and actual market rule sample,outside initial daily-high strategy
+HURNJ,Hurricane hitting New Jersey,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWSTORM,Snowstorms,one_off,other weather product,"Boston;Chicago;New York City;Washington, DC",KXSNOWSTORM-26FEBNYC2-22.0,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXBIGGESTQUAKEH,Biggest earthquake hourly,hourly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXPARKCOPEN,Park City Mountain Opening,annual,other weather product,Park City,KXPARKCOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXALTAOPEN,Alta Opening,annual,other weather product,Alta,KXALTAOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHOUHIGH,Highest temperature in Houston,daily,daily high,Houston,,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTPHX,Low Temperature Phoenix,daily,other weather product,Phoenix,KXLOWTPHX-26OCT11-T75,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCATI,Hurricane Ida size,custom,non-city environmental product,,HURCATI-21AUG29-T2,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINNYCW,How much will it rain in NYC this week? ,weekly,other weather product,New York City,KXRAINNYCW-28SEP26-04OCT26-T2,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYRAP,Natural disaster hits Rapid City,custom,other weather product,Rapid City,EMERGENCYRAP-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSJCLOWT,Monthly minimum temperature in San Jose,monthly,other weather product,San Jose,KXSJCLOWT-26DEC31-40,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCATFL,Hurricane warning FL,custom,other weather product,Miami,HURCATFL-21AUG14,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTKSAN,Low Temperature San Diego,daily,other weather product,San Diego,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTLSSG,Daily low temp Geneva,daily,other weather product,Geneva,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYLA,Natural disaster hits Los Angeles,custom,other weather product,Los Angeles,EMERGENCYLA-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTNOLA,NOLA Low Temperature,daily,other weather product,New Orleans,KXLOWTNOLA-26OCT11-T66,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWAUS,Lowest temperature in Austin,daily,other weather product,Austin,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURORL,Hurricane hits Orlando,custom,other weather product,Orlando,HURORL-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTSBGR,Daly high temp Sao Paulo,daily,daily high,São Paulo,,series catalog and actual market rule sample,see dated contract mappings
+KXEMERGENCYSF,Natural disaster hits San Francisco,custom,other weather product,San Francisco,EMERGENCYSF-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXKEYSTONECLOSE,Keystone Resort Closing,annual,other weather product,Keystone,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSTOWEOPEN,Stowe Mountain Resort Opening,annual,other weather product,Stowe,KXSTOWEOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYLA,Natural disaster hits Los Angeles,custom,other weather product,Los Angeles,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURNO,Hurricane hits New Orleans,annual,other weather product,New Orleans,HURNO-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXCITIESWEATHER,Highest temperature in cities,daily,other weather product,Austin;Chicago;Denver;Houston;Miami;New York City;Philadelphia,KXCITIESWEATHER-25MAR04(CHI)(DEN)(PHIL)-(B49.5)(B46.5)(B56.5),series catalog and all location-variable market rules,outside initial daily-high strategy
+KXCHISNOWXMAS,Chistmas Chicago ,one_off,other weather product,Chicago,KXCHISNOWXMAS-25DEC-0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTSAN,Low Temperature San Diego,daily,other weather product,San Diego,KXLOWTSAN-26OCT11-T66,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKDEN,Average Weekly Temp in Denver ,weekly,other weather product,Denver,KXAVGTKDEN-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXASPENOPEN,Aspen Snowmass Opening,annual,other weather product,Aspen,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDCSNOWM,DC Monthly Snow,monthly,other weather product,"Washington, DC",KXDCSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHMONTH,Hottest month instance,monthly,non-city environmental product,,KXHMONTH-26DEC,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTCYYZ,Daily low temp Toronto,daily,other weather product,Toronto,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURNYC,Hurricane hits NYC,custom,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYMIA,Natural disaster hits Miami,custom,other weather product,Miami,EMERGENCYMIA-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTSFO,Lowest Temperature San Francisco,daily,other weather product,San Francisco,KXLOWTSFO-26OCT11-T54,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINPVDM,RAIN PROVIDENCE,custom,other weather product,Providence,KXRAINPVDM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWEEKHTLAX,Weekly high temperature Los Angeles,weekly,other weather product,Los Angeles,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWEEKHTNYC,Weekly high temperature New York,weekly,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYPHIL,Natural disaster in Philadelphia,custom,other weather product,Philadelphia,EMERGENCYPHIL-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBACHELOROPEN,Mt. Bachelor Opening,annual,named facility; outside daily-high strategy,,KXBACHELOROPEN-27-27DEC26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXNYCSNOWM,NYC Snowfall monthly,monthly,other weather product,New York City,KXNYCSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTRKSI,Daily high temp Seoul,daily,daily high,Seoul,,series catalog and actual market rule sample,see dated contract mappings
+RAINSEA,Seattle rain,daily,other weather product,Seattle,,series catalog and actual market rule sample,outside initial daily-high strategy
+INDIACLIMATE,India climate goals,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTLTFM,Daily high temp Istanbul,daily,daily high,Istanbul,,series catalog and actual market rule sample,see dated contract mappings
+KXBRECKCLOSE,Breckenridge Ski Resort Closing,annual,other weather product,Breckenridge,,series catalog and actual market rule sample,outside initial daily-high strategy
+RAINNYC,NYC rain,daily,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXNEXTCAT5HURDATE,Next CAT 5 hurricane date,custom,non-city environmental product,,KXNEXTCAT5HURDATE-26DEC01-26SEP01,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKPHX,Average Weekly Temp in Phoenix ,weekly,other weather product,Phoenix,KXAVGTKPHX-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCATI,Hurricane Ida size,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHEATWARNING,Heat warning,custom,no available market; location unspecified,,,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXNAMEDSTORM,Named Storms,custom,non-city environmental product,,KXNAMEDSTORM-26DEC01EPACTOT-26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURNOR,Hurricane hits Norfolk,custom,other weather product,Norfolk,HURNOR-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDENSNOWXMAS,Denver Snow Christmas,one_off,other weather product,Denver,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTSDF,Lowest Temperature SDX,daily,other weather product,Louisville,KXLOWTSDF-26OCT11-T61,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTATL,Atlanta Max Temperature,daily,daily high,Atlanta,KXHIGHTATL-26OCT11-T78,series catalog and actual market rule sample,see dated contract mappings
+KXFIRSTHURRICANE,First Hurricane,custom,non-city environmental product,,KXFIRSTHURRICANE-26DEC01ATL-WIL,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTOMDB,Daily low temp Dubai,daily,other weather product,Dubai,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINSTPM,St Petersburg Rain Monthly,monthly,other weather product,St. Petersburg,KXRAINSTPM-26JUL-10,series catalog and actual market rule sample,outside initial daily-high strategy
+KXKILLINGTONOPEN,Killington Opening,annual,other weather product,Killington,KXKILLINGTONOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBOSSNOWM,Boston Snow Monthly,monthly,other weather product,Boston,KXBOSSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAUSSNOWM,Austin Snowfall Monthly,monthly,other weather product,Austin,KXAUSSNOWM-26MAR-5.0,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYHOU,Natural disaster hits Houston,custom,other weather product,Houston,,series catalog and actual market rule sample,outside initial daily-high strategy
+ARTICICE,Arctic sea ice,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHMIA,Highest temperature in Miami,daily,daily high,Miami,KXHIGHMIA-26OCT11-T94,series catalog and actual market rule sample,see dated contract mappings
+KXTEMPNYCHS,Hourly Directional NYC Temperature,hourly,other weather product,New York City,KXTEMPNYCHS-26OCT1009-T54.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTLSGG,Daily low temperature Geneva,daily,other weather product,Geneva,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINDALM,Rain Dallas,custom,other weather product,Dallas,KXRAINDALM-26OCT-10,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYDES,Natural disaster hits Des Moines,custom,other weather product,Des Moines,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXJACWSNOWM,"Jackson, WY Monthly Snow",monthly,other weather product,"Jackson, Wyoming",KXJACWSNOWM-26MAR-6.0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPMIAH,Hourly Directional Miami Temperature,hourly,other weather product,Miami,KXTEMPMIAH-26OCT1009-T84.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTEBBR,Daily high temp Brussels,daily,daily high,Brussels,,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTMIN,Low  temperature Minnesota,daily,other weather product,Minneapolis,KXLOWTMIN-26OCT11-T70,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDROUGHTLEVEL,Drought level,one_off,non-city environmental product,,KXDROUGHTLEVEL-26JULLD4-WA,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPAUSH,Hourly Directional Austin Temperature,hourly,other weather product,Austin,KXTEMPAUSH-26SEP1010-T84.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCTOTMAJ,Number of major hurricanes,annual,non-city environmental product,,KXHURCTOTMAJ-26DEC01-T7,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCHARL,Hurricane hits Charleston,custom,other weather product,Charleston,,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYCOL,Natural disaster hits Columbus,custom,other weather product,Columbus,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHHOU,Highest temperature in Houston,daily,daily high,Houston,KXHIGHHOU-25JAN28-T64,series catalog and actual market rule sample,see dated contract mappings
+HURJACKFL,Hurricane hits Jacksonville,custom,other weather product,Jacksonville,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTEDDB,Daily high temp Berlin,daily,daily high,Berlin,,series catalog and actual market rule sample,see dated contract mappings
+KXDALSNOWM,Dallas Snowfall Monthly,monthly,other weather product,Dallas,KXDALSNOWM-26MAR-5.0,series catalog and actual market rule sample,outside initial daily-high strategy
+TORNADO,Number of Tornadoes,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURNO,Hurricane hits New Orleans,annual,other weather product,New Orleans,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTEWR,"Newark, NJ (EWR) Daily Max Temp",daily,daily high,Newark,KXHIGHTEWR-26OCT11-T70,series catalog and actual market rule sample,see dated contract mappings
+KXSNOWBASINOPEN,Snowbasin Opening,annual,named facility; outside daily-high strategy,,KXSNOWBASINOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYRAP,Natural disaster hits Rapid City,custom,other weather product,Rapid City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCAT,Hurricane category,custom,non-city environmental product,,KXHURCAT-26ULANA-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWEEKHTMIA,Weekly high temperature Miami,weekly,other weather product,Miami,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCATH,Hurricane Henri size,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXASPENMTNOPEN,Aspen Mountain Opening,annual,other weather product,Aspen,KXASPENMTNOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWNYM,Total snow in NYC,monthly,other weather product,New York City,KXSNOWNYM-25FEB-T10.0,series catalog and actual market rule sample,outside initial daily-high strategy
+TSUNAMI,Tsunami ,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPLAXH,Hourly Directional Los Angeles Temperature,hourly,other weather product,Los Angeles,KXTEMPLAXH-26SEP1010-T79.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEARTHQUAKEJAPAN,Earthquake in Japan,custom,non-city environmental product,,KXEARTHQUAKEJAPAN-30,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTDAL,Lowest temperature Dallas,daily,other weather product,Dallas,KXLOWTDAL-26OCT11-T69,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURHAT,Hurricane hits Hatteras Island,custom,other weather product,Hatteras Island,HURHAT-23NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCITYHOU,Houston hurricane landfall,custom,other weather product,Houston,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPLAXHS,Hourly Directional Coastal LA Temperature,hourly,other weather product,Los Angeles,KXTEMPLAXHS-26OCT1009-T71.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYLOU,Natural disaster hits Louisville,custom,other weather product,Louisville,EMERGENCYLOU-23,series catalog and actual market rule sample,outside initial daily-high strategy
+USCLIMATE,US climate goals,one_off,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURSAV,Hurricane hits Savannah,custom,other weather product,Savannah,HURSAV-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYJAC,Natural disaster hits Jackson,custom,other weather product,"Jackson, Mississippi",EMERGENCYJAC-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXCOPPEROPEN,Copper Mountain Opening,annual,named facility; outside daily-high strategy,,KXCOPPEROPEN-27-25OCT26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAIN,Where will it rain daily,daily,other weather product,"Albuquerque;Atlanta;Austin;Boston;Chicago;College Station;Columbus;Dallas;Denver;Detroit;Houston;Indianapolis;Las Vegas;Lexington;Los Angeles;Miami;Milwaukee;Minneapolis;New Orleans;New York City;Newark;Oklahoma City;Philadelphia;Phoenix;Pittsburgh;Providence;San Antonio;San Francisco;Seattle;Springfield;St Louis;Tampa;Trenton;Washington, DC",KXRAIN-26OCT11-TTN,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXHIGHTVHHH,Daily high temp Hong Kong,daily,daily high,Hong Kong,KXHIGHTVHHH-26AUG19-T33,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHTDC,Washington DC Daily Max Temp,daily,daily high,"Washington, DC",KXHIGHTDC-26OCT11-T75,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHTEDDF,Daily high temp Frankfurt,daily,daily high,Frankfurt,,series catalog and actual market rule sample,see dated contract mappings
+KXDVHIGH,Death Valley temperature,daily,other weather product,Death Valley,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBEAVEROPEN,Beaver Creek Resort Opening,annual,named facility; outside daily-high strategy,,KXBEAVEROPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINHOUM,Rain Houston,custom,other weather product,Houston,KXRAINHOUM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTEHAM,Amsterdam Daily High Temperature,daily,daily high,Amsterdam,KXHIGHTEHAM-26AUG20-T22,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHLAX,Highest temperature in Los Angeles,daily,daily high,Los Angeles,KXHIGHLAX-26OCT11-T77,series catalog and actual market rule sample,see dated contract mappings
+KXEVSHARE,EV market share,custom,non-city environmental product,,EVSHARE-30JAN-50,series catalog and actual market rule sample,outside initial daily-high strategy
+SNOWNY,Total snow in NYC,custom,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+CORIVER,Lake Mead water level projections,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHOUSNOWM,Houston Snowfall Markets,monthly,other weather product,Houston,KXHOUSNOWM-26MAR-5.0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURRLANDNE3,Northeast Category 3+ hurricane landfall,one_off,non-city environmental product,,KXHURRLANDNE3-31DEC26-YES,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSFOSNOWM,San Francisco Snowfall markets,monthly,other weather product,San Francisco,KXSFOSNOWM-26MAR-0.5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINNYC,NYC rain,daily,other weather product,New York City,KXRAINNYC-26JUL15-T0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURNJ,Hurricane hitting New Jersey,custom,non-city environmental product,,HURNJ-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWS,White Christmas,annual,other weather product,Albany;Bismarck;Boston;Buffalo;Burlington;Chicago;Cleveland;Concord;Des Moines;Detroit;Duluth;Milwaukee;Minneapolis;New York City;Pittsburgh,KXSNOWS-24-PITTS,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXHIGHTZSPD,Daily high temp Shanghai,daily,daily high,Shanghai,KXHIGHTZSPD-26AUG19-T33,series catalog and actual market rule sample,see dated contract mappings
+KXRAINLAXM,Rain Los Angeles,custom,other weather product,Los Angeles,KXRAINLAXM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPLAHS,Hourly Directional Coastal LA Temperature,hourly,other weather product,Los Angeles,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWCHI,Lowest temperature in Chicago,daily,other weather product,Chicago,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBOSSNOWXMAS,Boston White Christmas,one_off,other weather product,Boston,KXBOSSNOWXMAS-25DEC-0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCHARL,Hurricane hits Charleston,custom,other weather product,Charleston,HURCHARL-23NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTLV,Las Vegas Max Daily Temperature,daily,daily high,Las Vegas,KXHIGHTLV-26OCT11-T80,series catalog and actual market rule sample,see dated contract mappings
+KXERUPTSUPER,Supervolcano,custom,non-city environmental product,,KXERUPTSUPER-0-50JAN01,series catalog and actual market rule sample,outside initial daily-high strategy
+RAINNYCM,Monthly rain in New York,monthly,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKMSY,Average Weekly Temp in New Orleans ,weekly,other weather product,New Orleans,KXAVGTKMSY-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURMIA,Hurricane hits Miami,custom,other weather product,Miami,HURMIA-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCTOT,Number of hurricanes,annual,non-city environmental product,,KXHURCTOT-26DEC01-T9,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYSTL,Natural disaster hits St. Louis,custom,other weather product,St Louis,EMERGENCYSTL-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINCMHM,RAIN COLUMBUS,custom,other weather product,Columbus,KXRAINCMHM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+SNOWCHIM,Total snow in Chicago,one_off,other weather product,Chicago,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXECLIPSECOVER,Cloud coverage in cities during eclipse,one_off,other weather product,Austin;Buffalo;Burlington;Cleveland;Dallas;Erie;Indianapolis;San Antonio,ECLIPSECOVER-ERIE,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXTEMP,Average annual temperature deviation,annual,non-city environmental product,,TEMP-21-T2.124,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKSAT,Average Weekly Temp in San Antonio ,weekly,other weather product,San Antonio,KXAVGTKSAT-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPCHIMETROHS,Hourly Directional Chicago Metro Temperature,hourly,other weather product,Chicago,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSPURRERUPT,Mount Spurr eruption,custom,non-city environmental product,,KXSPURRERUPT-25-NOV,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDETSNOWM,Detroit Monthly Snow,monthly,other weather product,Detroit,KXDETSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURPATHSCAROLINA,hurricane hits SOUTH CAROLINA,custom,non-city environmental product,,KXHURPATHSCAROLINA-25DEC,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBIGSKYOPEN,Big Sky Opening,annual,other weather product,Big Sky,KXBIGSKYOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHMONTHRANGE,Monthly Temperature Increase (ºC),custom,non-city environmental product,,KXHMONTHRANGE-26DEC-T1.30,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTLFPG,Daily high temp Paris,daily,daily high,Paris,KXHIGHTLFPG-26AUG20-T27,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHTVABB,Daily high temp Mumbai,daily,daily high,Mumbai,,series catalog and actual market rule sample,see dated contract mappings
+KXHURJACKFL,Hurricane hits Jacksonville,custom,other weather product,Jacksonville,HURJACKFL-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTZBAA,Beijing Daily Low Temperature,daily,other weather product,Beijing,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTKSAN,Daily High Temperature San Diego,daily,daily high,San Diego,,series catalog and actual market rule sample,see dated contract mappings
+KXHOLIDAYTMIN,Min temperature holidays ,custom,other weather product,"Atlanta;Austin;Boston;Chicago;Dallas;Denver;Houston;Las Vegas;Los Angeles;Miami;Minneapolis;New Orleans;New York City;Oklahoma City;Philadelphia;Phoenix;San Antonio;San Francisco;Seattle;Washington, DC",KXHOLIDAYTMIN-260704-SFO,series catalog and all location-variable market rules,outside initial daily-high strategy
+SNOWNYM,Total snow in NYC,monthly,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPMON,Global monthly temperature average,monthly,non-city environmental product,,TEMPMON-21OCT-T1.03,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTOKC,Oklahoma City Maximum High Temperature,daily,daily high,Oklahoma City,KXHIGHTOKC-26OCT11-T95,series catalog and actual market rule sample,see dated contract mappings
+TEMP,Average annual temperature deviation,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTVHHH,Daily low temp Hong Kong,daily,other weather product,Hong Kong,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINSBOS,Rainstorm in Boston,custom,other weather product,Boston,KXRAINSBOS-26SEP26-27SEP26-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTLFPG,Daily low temp Paris ,daily,other weather product,Paris,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBALDYOPEN,Bald Mountain Opening,annual,named facility; outside daily-high strategy,,KXBALDYOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTPHIL,Lowest temperature in Philadelphia,daily,other weather product,Philadelphia,KXLOWTPHIL-26OCT11-T59,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTYSSY,Daily low temp Sydney,daily,other weather product,Sydney,,series catalog and actual market rule sample,outside initial daily-high strategy
+HIGHNY,Highest temperature in NYC,daily,daily high,New York City,,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHTSATX,San Antonio Daily Maximum Temperature,daily,daily high,San Antonio,KXHIGHTSATX-26OCT11-T96,series catalog and actual market rule sample,see dated contract mappings
+HURCOASTTEX,Hurricane hits coastal Texas,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXUSCLIMATE,US climate goals,one_off,non-city environmental product,,USCLIMATE-2030,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPNYCH,Hourly Directional NYC Temperature,hourly,other weather product,New York City,KXTEMPNYCH-26SEP1010-T79.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINMIAM,Rain Miami,custom,other weather product,Miami,KXRAINMIAM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTSFO,San Francisco High Temperature Daily,daily,daily high,San Francisco,KXHIGHTSFO-26OCT11-T70,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHTZBAA,Beijing Daily High Temperature,daily,daily high,Beijing,,series catalog and actual market rule sample,see dated contract mappings
+KXPHILSNOWM,Philadelphia Monthly Snow,monthly,other weather product,Philadelphia,KXPHILSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDENSNOWMB,Denver monthly snow,monthly,other weather product,Denver,KXDENSNOWMB-26MAR-5.0,series catalog and actual market rule sample,outside initial daily-high strategy
+HIGHNY0,NYC high temperature,daily,daily high,New York City,,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTSATX,Lowest Temperature SATX,daily,other weather product,San Antonio,KXLOWTSATX-26OCT11-T69,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYSF,Natural disaster hits San Francisco,custom,other weather product,San Francisco,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYDES,Natural disaster hits Des Moines,custom,other weather product,Des Moines,EMERGENCYDES-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTSUNAMI,Tsunami ,custom,non-city environmental product,,KXTSUNAMI-25DEC31-1,series catalog and actual market rule sample,outside initial daily-high strategy
+ARCTICICEMIN,Arctic sea ice min extent,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURRLANDFL4,Florida Category 4+ hurricane landfall,one_off,non-city environmental product,,KXHURRLANDFL4-31DEC26-YES,series catalog and actual market rule sample,outside initial daily-high strategy
+KXERUPTKILUAEA,Kiluaea,custom,non-city environmental product,,KXERUPTKILUAEA-0-25JUL04,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHPHIL,Highest temperature in Philadelphia,daily,daily high,Philadelphia,KXHIGHPHIL-26OCT11-T71,series catalog and actual market rule sample,see dated contract mappings
+KXCHISNOWM,Chicago Snowfall Monthly,monthly,other weather product,Chicago,KXCHISNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTEDDF,Daily low temp Frankfurt,daily,other weather product,Frankfurt,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSEASNOWM,Seattle Snowfall Monthly,monthly,other weather product,Seattle,KXSEASNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTCYYZ,Daily high temp Toronto,daily,daily high,Toronto,,series catalog and actual market rule sample,see dated contract mappings
+KXRAINSEAM,RAIN SEATTLE,custom,other weather product,Seattle,KXRAINSEAM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+HIGHUS,High temp in United States,daily,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINHOLIDAY,Where will it rain on holidays? ,custom,other weather product,"Atlanta;Austin;Boston;Chicago;Dallas;Denver;Houston;Las Vegas;Los Angeles;Miami;Minneapolis;New Orleans;New York City;Oklahoma City;Philadelphia;Phoenix;San Antonio;San Francisco;Seattle;Washington, DC",KXRAINHOLIDAY-260704-SFO,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXLOWTSBGR,Daily low temp Sao Paulo ,daily,other weather product,São Paulo,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTEWR,"Newark, NJ (EWR) Daily Low Temp",daily,other weather product,Newark,KXLOWTEWR-26OCT11-T57,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPBOSH,Hourly Directional Boston Temperature,hourly,other weather product,Boston,KXTEMPBOSH-26APR2023-T50.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEARTHQUAKEJAPANTATSUKI,Earthquake in Japan July 2025,custom,non-city environmental product,,KXEARTHQUAKEJAPANTATSUKI-25,series catalog and actual market rule sample,outside initial daily-high strategy
+HIGHAUS,Highest temperature in Austin,daily,daily high,Austin,,series catalog and actual market rule sample,see dated contract mappings
+KXRAINSNYC,Rainstorm in NYC,custom,other weather product,New York City,KXRAINSNYC-26SEP26-27SEP26-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTBOS,Boston Maximum Daily Temperature,daily,daily high,Boston,KXHIGHTBOS-26OCT11-T67,series catalog and actual market rule sample,see dated contract mappings
+KXRAINAUSM,RAIN AUSTIN,custom,other weather product,Austin,KXRAINAUSM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+HIGHCHI,Highest temperature in Chicago,daily,daily high,Chicago,,series catalog and actual market rule sample,see dated contract mappings
+KXAVGTKDFW,Average Weekly Temp in Dallas ,weekly,other weather product,Dallas,KXAVGTKDFW-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRONI,RONI,one_off,non-city environmental product,,KXRONI-27APR2-T25,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINSFOM,RAIN SAN FRANCISCO,custom,other weather product,San Francisco,KXRAINSFOM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+ECLIPSECOVERBUFF,Eclipse Cover Buffalo,one_off,other weather product,Buffalo,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXINDIACLIMATE,India climate goals,custom,non-city environmental product,,INDIACLIMATE-30,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTRKSI,Daily low temp Seoul,daily,other weather product,Seoul,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTLTFM,Daily low temp Istanbul,daily,other weather product,Istanbul,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEARTHQUAKELA,Earthquake in LA,custom,other weather product,Los Angeles,KXEARTHQUAKELA-25JUL,series catalog and actual market rule sample,outside initial daily-high strategy
+MICHTEMP,Lake Michigan surface water temperature,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+MEAD,Lake Mead water levels,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURMYR,Hurricane hits North Myrtle Beach,custom,other weather product,North Myrtle Beach,HURMYR-23NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+SNOW,Snow totals,one_off,no available market; location unspecified,,,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXHURPATHGULFCOAST,GULF COAST HURRICANE LANDFALL,custom,non-city environmental product,,KXHURPATHGULFCOAST-25,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCLAND,Hurricanes making landfall,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINSEA,Seattle rain,daily,other weather product,Seattle,RAINSEA-22AUG12-T0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHDEN,Highest temperature in Denver,daily,daily high,Denver,KXHIGHDEN-26OCT11-T85,series catalog and actual market rule sample,see dated contract mappings
+EUCLIMATE,EU hits climate goals,one_off,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURPATHAL,hurricane hits alabama,one_off,non-city environmental product,,KXHURPATHAL-31DEC26ISAIAS-YES,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTEGLL,Daily high temp London ,daily,daily high,London,KXHIGHTEGLL-26AUG19-T26,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTEGLL,Daily low temp London,daily,other weather product,London,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWAZ,Snow in Phoenix,custom,other weather product,Phoenix,KXSNOWAZ-24DEC,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYHOU,Natural disaster hits Houston,custom,other weather product,Houston,EMERGENCYHOU-23,series catalog and actual market rule sample,outside initial daily-high strategy
+HURTB,Hurricane hits Tampa,custom,other weather product,Tampa,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINDPARIS,Daily Rain - Paris ,daily,other weather product,Paris,KXRAINDPARIS-03SEP27-T0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXPHILHIGH,Highest temperature in Philadelphia,custom,other weather product,Philadelphia,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCAT,Hurricane category,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURMYR,Hurricane hits North Myrtle Beach,custom,other weather product,North Myrtle Beach,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXNORTHSTAROPEN,Northstar California Resort Opening,annual,named facility; outside daily-high strategy,,KXNORTHSTAROPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWMIA,Lowest temperature in Miami,daily,other weather product,Miami,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTAUS,Lowest temperature in Austin,daily,other weather product,Austin,KXLOWTAUS-26OCT11-T67,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINWKND,Where will it rain this weekend?,weekly,other weather product,"Atlanta;Austin;Boston;Chicago;College Station;Dallas;Denver;Houston;Las Vegas;Los Angeles;Miami;Minneapolis;New Orleans;New York City;Newark;Oklahoma City;Philadelphia;Phoenix;San Antonio;San Francisco;Seattle;Trenton;Washington, DC;West Palm Beach",KXRAINWKND-26OCT10-WPB,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXHEAVENLYCLOSE,Heavenly Mountain Resort Closing,annual,named facility; outside daily-high strategy,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTVABB,Daily low temp Mumbai,daily,other weather product,Mumbai,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTSDF,HIGHEST Temperature SATX,daily,daily high,Louisville,KXHIGHTSDF-26OCT11-T77,series catalog and actual market rule sample,see dated contract mappings
+KXMEAD,Lake Mead water levels,monthly,non-city environmental product,,KXMEAD-26DEC-A1040,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTMIN,Minneapolis Daily High Temperature,daily,daily high,Minneapolis,KXHIGHTMIN-26OCT11-T92,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTSEA,Low Temperature Seattle,daily,other weather product,Seattle,KXLOWTSEA-26OCT11-T45,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHNYD,Hourly Directional NYC Temperature,hourly,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+HMONTH,Hottest month instance,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEARTHQUAKECALIFORNIA,Earthquake in California,custom,non-city environmental product,,KXEARTHQUAKECALIFORNIA-27,series catalog and actual market rule sample,outside initial daily-high strategy
+ECLIPSECOVER,Cloud coverage in cities during eclipse,one_off,no available market; location unspecified,,,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXTORNADO,Number of Tornadoes,monthly,non-city environmental product,,KXTORNADO-26DEC-75,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHUS,High temp in United States,daily,non-city environmental product,,HIGHUS-23OCT20-T108,series catalog and actual market rule sample,outside initial daily-high strategy
+KXELNINO,Will El Niño conditions be declared?,one_off,non-city environmental product,,KXELNINO-26-SEP,series catalog and actual market rule sample,outside initial daily-high strategy
+EVSHARE,EV market share,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWNY,Lowest Temperature in NYC,daily,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINDC,Daily Rain DC,daily,other weather product,"Washington, DC",,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCATFL,Hurricane warning FL,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDENSNOWM,Denver snowfall monthly,monthly,other weather product,Denver,KXDENSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSTOWECLOSE,Stowe Mountain Resort Closing,annual,other weather product,Stowe,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINNAPAM,Napa rainfall totals,monthly,other weather product,Napa,KXRAINNAPAM-01DEC26-31DEC26-T8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWARMING,Global warming,one_off,non-city environmental product,,KXWARMING-50,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWNYC,SNOW IN NYC,custom,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCTOTMAJ,Number of major hurricanes,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXCO2LEVEL,CO2 level,custom,non-city environmental product,,KXCO2LEVEL-30-460,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTOKC,Low Temperature Oklahoma City,daily,other weather product,Oklahoma City,KXLOWTOKC-26OCT11-T65,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKOKC,Average Weekly Temp in Oklahoma City ,weekly,other weather product,Oklahoma City,KXAVGTKOKC-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXCO2,US CO2 totals,monthly,non-city environmental product,,CO2-22APR-C390,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYSTL,Natural disaster hits St. Louis,custom,other weather product,St Louis,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTATL,Low Temperature Atlanta,daily,other weather product,Atlanta,KXLOWTATL-26OCT11-T63,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKAUS,Average Weekly Temp in Austin ,weekly,other weather product,Austin,KXAVGTKAUS-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTSNOWFALLBIGSKYM,Big Sky monthly snowfall,monthly,other weather product,Big Sky,KXTSNOWFALLBIGSKYM-26DEC-T50,series catalog and actual market rule sample,outside initial daily-high strategy
+EARTHQUAKE,earthquake,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTMMMX,Daily high temp Mexico City,daily,daily high,Mexico City,,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHTTTN,"Trenton, NJ Daily Max Temp",daily,daily high,Trenton,KXHIGHTTTN-26OCT11-T69,series catalog and actual market rule sample,see dated contract mappings
+KXRAINNYCM,Monthly rain in New York,monthly,other weather product,New York City,KXRAINNYCM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURWIL,Hurricane hits Wilmington,custom,other weather product,Wilmington,HURWIL-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTWSSS,Daily low temp Singapore,daily,other weather product,Singapore,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXECLIPSECOVERBUFF,Eclipse Cover Buffalo,one_off,other weather product,Buffalo,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHOU,Highest temperature in Houston,daily,daily high,Houston,,series catalog and actual market rule sample,see dated contract mappings
+MINNYC,Min NYC temp,monthly,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTMMMX,Daily low temp Mexico City,daily,other weather product,Mexico City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWASDESTATCORN,Corn,one_off,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+HOTYEAR,Global heat,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURNYC,Hurricane hits NYC,custom,other weather product,New York City,HURNYC-24NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTWSSS,Daily high temp Singapore,daily,daily high,Singapore,,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTTTN,Trenton Daily low temp ,daily,other weather product,Trenton,KXLOWTTTN-26OCT11-T53,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTYSSY,Daily high temp Sydney,daily,daily high,Sydney,,series catalog and actual market rule sample,see dated contract mappings
+EMERGENCYJAC,Natural disaster hits Jackson,custom,other weather product,"Jackson, Mississippi",,series catalog and actual market rule sample,outside initial daily-high strategy
+KXDENHIGH,Highest temperature in Denver,daily,daily high,Denver,,series catalog and actual market rule sample,see dated contract mappings
+KXHURCOASTTEX,Hurricane hits coastal Texas,custom,non-city environmental product,,HURCOASTTEX-23NOV30-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCITYTPA,Tampa hurricane landfall,custom,other weather product,Tampa,KXHURCITYTPA-01DEC26-C5-YES,series catalog and actual market rule sample,outside initial daily-high strategy
+KXMINNYC,Min NYC temp,monthly,other weather product,New York City,MINNYC-22MAR-T20,series catalog and actual market rule sample,outside initial daily-high strategy
+ARCTICICEMAX,Arctic sea ice max extent,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURPATHHAWAII,HURRICANE HITS HAWAII,custom,non-city environmental product,,KXHURPATHHAWAII-26DEC,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWCHIM,Total snow in Chicago,one_off,other weather product,Chicago,,series catalog and actual market rule sample,outside initial daily-high strategy
+AVGTEMP,US average temp,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHEAVENLYOPEN,Heavenly Mountain Resort Opening,annual,named facility; outside daily-high strategy,,KXHEAVENLYOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXPITSNOWM,Pittsburgh monthly snowfall,monthly,other weather product,Pittsburgh,KXPITSNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEMERGENCYNOLA,Natural disaster in New Orleans,custom,other weather product,New Orleans,EMERGENCYNOLA-23-B,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTOMDB,Daily high temp Dubai,daily,daily high,Dubai,,series catalog and actual market rule sample,see dated contract mappings
+KXHURTB,Hurricane hits Tampa,custom,other weather product,Tampa,HURTB-24NOV30-T96,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTEDDB,Daily Low Temp Berlin ,daily,other weather product,Berlin,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINCLLM,RAIN COLLEGE STATION,custom,other weather product,College Station,KXRAINCLLM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+HURNOR,Hurricane hits Norfolk,custom,other weather product,Norfolk,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXKILAUEA,Kilauea eruption,one_off,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINLEXM,RAIN LEXINGTON,custom,other weather product,Lexington,KXRAINLEXM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURRICANENAMES,Hurricane Names,custom,non-city environmental product,,KXHURRICANENAMES-26DEC01CPAC-LOW,series catalog and actual market rule sample,outside initial daily-high strategy
+KXVEI4,VEI 4,one_off,non-city environmental product,,KXVEI4-26DEC31-A3,series catalog and actual market rule sample,outside initial daily-high strategy
+KXASPSNOWM,Aspen Snow Monthly,monthly,other weather product,Aspen,KXASPSNOWM-25DEC-0.5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKLAS,Average Weekly Temp in Las Vegas ,weekly,other weather product,Las Vegas,KXAVGTKLAS-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHOTYEAR,Global heat,annual,non-city environmental product,,HOTYEAR-23-T1.10,series catalog and actual market rule sample,outside initial daily-high strategy
+HURMIA,Hurricane hits Miami,custom,other weather product,Miami,,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYPHIL,Natural disaster in Philadelphia,custom,other weather product,Philadelphia,,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYWIL,Natural disaster hits Wilmington,custom,other weather product,Wilmington,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTPHX,Phoenix High Temperature Daily,daily,daily high,Phoenix,KXHIGHTPHX-26OCT11-T90,series catalog and actual market rule sample,see dated contract mappings
+KXEARTHQUAKE,earthquake,custom,non-city environmental product,,KXEARTHQUAKE-26JUN-77,series catalog and actual market rule sample,outside initial daily-high strategy
+KXALYOPEN,Alyeska Opening,annual,named facility; outside daily-high strategy,,KXALYOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+HURORL,Hurricane hits Orlando,custom,other weather product,Orlando,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSLCSNOWM,Salt Lake City Monthly,monthly,other weather product,Salt Lake City,KXSLCSNOWM-26MAR-1.0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXECLIPSEREYK,Solar Eclipse Reykjavik,one_off,other weather product,Reykjavik,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXPARKCCLOSE,Park City Mountain Closing,annual,other weather product,Park City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHEATAPHX,Average weekly heat in Phoenix,weekly,other weather product,Phoenix,KXHEATAPHX-26AUG16-T105,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAIND,Rain Daily,daily,no available market; location unspecified,,,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXHDDCVG,Cincinnati heating degree days,custom,other weather product,Cincinnati / Covington,KXHDDCVG-KCVG-01OCT26-31DEC26-T1650,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBEAVERCLOSE,Beaver Creek Resort Closing,annual,named facility; outside daily-high strategy,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTHOU,Daily High Temperature Houston,daily,daily high,Houston,KXHIGHTHOU-26OCT11-T96,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTHOU,Low Temperature Houston,daily,other weather product,Houston,KXLOWTHOU-26OCT11-T71,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCTOT,Number of hurricanes,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXKEYSTONEOPEN,Keystone Resort Opening,annual,other weather product,Keystone,KXKEYSTONEOPEN-27-25OCT26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTCHI,Lowest Temperature Chicago,daily,other weather product,Chicago,KXLOWTCHI-26OCT11-T61,series catalog and actual market rule sample,outside initial daily-high strategy
+KXVAILOPEN,Vail Mountain Opening,annual,other weather product,Vail,,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYLOU,Natural disaster hits Louisville,custom,other weather product,Louisville,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBIGGESTQUAKE,Biggest earthquake,daily,non-city environmental product,,KXBIGGESTQUAKE-10OCT26-7.0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXMICHTEMP,Lake Michigan surface water temperature,monthly,non-city environmental product,,MICHTEMP-22AUG29-T21.25,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWNY,Snow in NYC,custom,other weather product,New York City,SNOWNY-22FEB19-T0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTXURI,Will the average temperature in Texas (DFW & IAH) fall below 20°F for at least 2 days within a 4-day span?,one_off,other weather product,Dallas;Houston,KXTXURI-28DEC31-29JAN01,series catalog and actual market rule sample,outside initial daily-high strategy
+KXBRECKOPEN,Breckenridge Ski Resort Opening,annual,other weather product,Breckenridge,KXBRECKOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXARTICICE,Arctic sea ice,custom,non-city environmental product,,ARTICICE-22DEC31-T13,series catalog and actual market rule sample,outside initial daily-high strategy
+KILAUEA,Kilauea eruption,one_off,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTDC,Lowest Temperature DC ,daily,other weather product,"Washington, DC",KXLOWTDC-26OCT11-T63,series catalog and actual market rule sample,outside initial daily-high strategy
+KXWEEKHTPHX,Weekly high temperature Phoenix,weekly,other weather product,Phoenix,,series catalog and actual market rule sample,outside initial daily-high strategy
+ERCOTX,Texas share of electricity from renewables,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWDEN,Lowest temperature in Denver,daily,other weather product,Denver,,series catalog and actual market rule sample,outside initial daily-high strategy
+HIGHMIA,Highest temperature in Miami,daily,daily high,Miami,,series catalog and actual market rule sample,see dated contract mappings
+KXMKESNOWM,Milwaukee monthly snowfall,monthly,other weather product,Milwaukee,KXMKESNOWM-26DEC-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEARTHQUAKEM,Earthquake monthly,one_off,non-city environmental product,,KXEARTHQUAKEM-26SEP-80,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTATL,Average Weekly Temp in Atlanta ,weekly,other weather product,Atlanta,KXAVGTATL-26AUG23-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINONT,"Rain in Ontario, California",daily,other weather product,Ontario,KXRAINONT-27FEB27-27FEB27-T0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURPATHNC,Hurricane hits north carolina,one_off,non-city environmental product,,KXHURPATHNC-26DEC,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTLSGG,Daily high temp Geneva,daily,daily high,Geneva,,series catalog and actual market rule sample,see dated contract mappings
+KXHIGHCHI,Highest temperature in Chicago,daily,daily high,Chicago,KXHIGHCHI-26OCT11-T80,series catalog and actual market rule sample,see dated contract mappings
+KXFEMA,States that declare natural disasters,annual,non-city environmental product,,FEMA-23-HI,series catalog and actual market rule sample,outside initial daily-high strategy
+KXERCOTX,Texas share of electricity from renewables,monthly,non-city environmental product,,ERCOTX-22JAN-T50,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTEMPDEN,High temperature denver,custom,other weather product,Denver,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCATH,Hurricane Henri size,custom,non-city environmental product,,HURCATH-21AUG22-T2,series catalog and actual market rule sample,outside initial daily-high strategy
+CO2,US CO2 totals,monthly,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXARCTICICEMIN,Arctic sea ice min extent,custom,non-city environmental product,,KXARCTICICEMIN-26OCT01-T4.8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXXFLARE,X flare,custom,non-city environmental product,,KXXFLARE-25DEC01,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCROSSHOU,Houston hurricane crossing,custom,other weather product,Houston,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCAL,Hurricane hits California,custom,non-city environmental product,,HURSAV-23NOV30-T30,series catalog and actual market rule sample,outside initial daily-high strategy
+KXALTASNOW,Snowfall in Alta Ski Resort,annual,other weather product,Alta,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTBOS,Low Temperature Boston,daily,other weather product,Boston,KXLOWTBOS-26OCT11-T48,series catalog and actual market rule sample,outside initial daily-high strategy
+KXNORTHSTARCLOSE,Northstar California Resort Closing,annual,named facility; outside daily-high strategy,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXNYCSNOWXMAS,NYC Snow christmas,one_off,other weather product,New York City,KXNYCSNOWXMAS-25DEC-0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTDAL,Dallas Maximum Temperature,daily,daily high,Dallas,KXHIGHTDAL-26OCT11-T96,series catalog and actual market rule sample,see dated contract mappings
+KXHURPATHFLA,hurricane hits florida,custom,non-city environmental product,,KXHURPATHFLA-25,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYMIA,Natural disaster hits Miami,custom,other weather product,Miami,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHOBBYTEMP,Maximum temperature at Houston Hobby Airport,one_off,other weather product,Houston,KXHOBBYTEMP-26SEP01,series catalog and actual market rule sample,outside initial daily-high strategy
+RAINMIA,Miami rain,custom,other weather product,Miami,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXSNOWBIRDOPEN,Snowbird Opening,annual,named facility; outside daily-high strategy,,KXSNOWBIRDOPEN-27-29NOV26,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINMKEM,RAIN MILWAUKEE,custom,other weather product,Milwaukee,KXRAINMKEM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXERUPTETNA,Etna,custom,non-city environmental product,,KXERUPTETNA-0-27JAN01,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEARTHQUAKEM7,Will there be a 7.0 mag earthquake in June,one_off,non-city environmental product,,KXEARTHQUAKEM7-25OCT31-7.0,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCMAJ,Number of major hurricanes,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURSAV,Hurricane hits Savannah,custom,other weather product,Savannah,,series catalog and actual market rule sample,outside initial daily-high strategy
+HURHAT,Hurricane hits Hatteras Island,custom,other weather product,Hatteras Island,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTLV,Las Vegas Daily Low Temperature,daily,other weather product,Las Vegas,KXLOWTLV-26OCT11-T67,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTRJTT,Daily high temp Tokyo,daily,daily high,Tokyo,,series catalog and actual market rule sample,see dated contract mappings
+KXLOWTEHAM,Amsterdam Daily Low Temperature,daily,other weather product,Amsterdam,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURRICANE,Hurricanes,custom,non-city environmental product,,KXHURRICANE-26DEC01EPACMAJ-8,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTNYC,Lowest temperature in NYC,daily,other weather product,New York City,KXLOWTNYC-26OCT11-T60,series catalog and actual market rule sample,outside initial daily-high strategy
+HURCAL,Hurricane hits California,custom,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTROPSTORM,Number of tropical storms,annual,non-city environmental product,,KXTROPSTORM-26DEC01-T30,series catalog and actual market rule sample,outside initial daily-high strategy
+KXMIASNOWM,Chicago Snowfall Monthly,one_off,other weather product,Chicago;Miami,KXMIASNOWM-26MAR-1.0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHNY0,NYC high temperature,daily,daily high,New York City,HIGHNY0-21AUG05-T78,series catalog and actual market rule sample,see dated contract mappings
+KXHURPATHGENERALMAJOR,MAJOR HURRICANE GENERAL LANDFALL,custom,non-city environmental product,,KXHURPATHGENERALMAJOR-25,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWNYC,Lowest temperature in New York,daily,other weather product,New York City,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTRJTT,Daily low temp Tokyo,daily,other weather product,Tokyo,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAQICITY,AQI in city at time,custom,other weather product,New York City,KXAQICITY-NYC26JUL19-90,series catalog and all location-variable market rules,outside initial daily-high strategy
+KXTEMPCHIH,Hourly Directional Chicago Temperature,hourly,other weather product,Chicago,KXTEMPCHIH-26SEP1010-T73.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCMAJ,Number of major hurricanes,custom,non-city environmental product,,HURCTOTMAJ-23DEC01-T5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHIGHTNOLA,New Orleans Max temp Daily,daily,daily high,New Orleans,KXHIGHTNOLA-26OCT11-T92,series catalog and actual market rule sample,see dated contract mappings
+KXEMERGENCYCOL,Natural disaster hits Columbus,custom,other weather product,Columbus,EMERGENCYCOL-23,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINDENM,RAIN DENVER,monthly,other weather product,Denver,KXRAINDENM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPDCH,Hourly Directional DC Temperature,hourly,other weather product,"Washington, DC",KXTEMPDCH-26SEP1010-T83.99,series catalog and actual market rule sample,outside initial daily-high strategy
+HURWIL,Hurricane hits Wilmington,custom,other weather product,Wilmington,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXTEMPCHIHS,Hourly Directional Chicago Metro Temperature,hourly,other weather product,Chicago,KXTEMPCHIHS-26OCT1010-T64.99,series catalog and actual market rule sample,outside initial daily-high strategy
+KXEUCLIMATE,EU hits climate goals,one_off,non-city environmental product,,EUCLIMATE-2030,series catalog and actual market rule sample,outside initial daily-high strategy
+KXGTEMP,Hottest year ever,annual,non-city environmental product,,KXGTEMP-27-P0,series catalog and actual market rule sample,outside initial daily-high strategy
+KXCORIVER,Lake Mead water level projections,annual,non-city environmental product,,CORIVER-2024-T1075,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTEBBR,Daily low temp Brussels,daily,other weather product,Brussels,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXAVGTKSAN,Average Weekly Temp in San Diego ,weekly,other weather product,San Diego,KXAVGTKSAN-26OCT11-6,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTZSPD,Daily low temp Shanghai,daily,other weather product,Shanghai,,series catalog and actual market rule sample,outside initial daily-high strategy
+TROPSTORM,Number of tropical storms,annual,no available market; location unspecified,,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLAXSNOWM,LA Snowfall Markets,monthly,other weather product,Los Angeles,KXLAXSNOWM-26MAR-0.5,series catalog and actual market rule sample,outside initial daily-high strategy
+KXRAINCHIM,Rain Chicago,monthly,other weather product,Chicago,KXRAINCHIM-26OCT-7,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTMIA,Lowest temperature in Miami,daily,other weather product,Miami,KXLOWTMIA-26OCT11-T81,series catalog and actual market rule sample,outside initial daily-high strategy
+EMERGENCYNOLA,Natural disaster in New Orleans,custom,other weather product,New Orleans,,series catalog and actual market rule sample,outside initial daily-high strategy
+KXHURCLAND,Hurricanes making landfall,custom,non-city environmental product,,HURCLAND-21-T4,series catalog and actual market rule sample,outside initial daily-high strategy
+KXLOWTLAX,Lowest Temperature in LA,daily,other weather product,Los Angeles,KXLOWTLAX-26OCT11-T63,series catalog and actual market rule sample,outside initial daily-high strategy

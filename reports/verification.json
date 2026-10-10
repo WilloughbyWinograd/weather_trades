@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "verification_scope": "Source extraction and simulation arithmetic under declared assumptions",
+  "historical_forecast_accessibility": "unverified; fixed release delays assumed",
+  "historical_executable_fills": "unverified; quoted fills assumed",
+  "verified_exact_live_replay": false,
+  "assertions": 30645,
+  "distinct_assertions": 294,
+  "markets": 6048,
+  "city_days": 1008,
+  "forecast_reductions": 8064,
+  "paired_forecasts": 1968,
+  "source_responses": 1742,
+  "maximum_station_grid_distance_km": {
+    "GFS": 6.815749452400853,
+    "HRRR": 1.8360023237847258
+  },
+  "constraints": "Real source records, independent forecast reduction, fee calculation and chronological cash replay; no synthetic performance data"
+}
