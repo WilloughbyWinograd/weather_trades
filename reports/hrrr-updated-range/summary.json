@@ -1,0 +1,230 @@
+{
+  "model": "HRRR",
+  "study_start": "2026-08-28",
+  "study_end": "2026-10-08",
+  "revision_signals": 454,
+  "signal_statuses": {
+    "Original one-degree step": {
+      "no initial quote": 94,
+      "eligible": 318,
+      "initial ask outside band": 42
+    },
+    "Updated forecast range": {
+      "no initial quote": 102,
+      "eligible": 303,
+      "initial ask outside band": 49
+    }
+  },
+  "matched_entries": 288,
+  "matched_mean_net_improvement": -0.4223145833333334,
+  "matched_mean_net_improvement_95_percent_date_bootstrap": [
+    -1.3117246527777777,
+    0.3829467625899281
+  ],
+  "results": [
+    {
+      "rule": "Original one-degree step",
+      "phase": "full",
+      "cohort": "all eligible",
+      "entries": 318,
+      "wins": 93,
+      "cost": 1469.65,
+      "fees": 72.5924,
+      "payout": 1428.0,
+      "gross_profit": -41.65000000000009,
+      "net_profit": -114.2424,
+      "mean_net_profit": -0.35925283018867926,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.3405167741935484,
+        0.8132084905660376
+      ]
+    },
+    {
+      "rule": "Updated forecast range",
+      "phase": "full",
+      "cohort": "all eligible",
+      "entries": 303,
+      "wins": 84,
+      "cost": 1399.81,
+      "fees": 69.0575,
+      "payout": 1283.0,
+      "gross_profit": -116.80999999999995,
+      "net_profit": -185.8675,
+      "mean_net_profit": -0.6134240924092409,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.5720600660066006,
+        0.45892992957746487
+      ]
+    },
+    {
+      "rule": "Original one-degree step",
+      "phase": "full",
+      "cohort": "common city-days",
+      "entries": 288,
+      "wins": 83,
+      "cost": 1330.84,
+      "fees": 65.939,
+      "payout": 1318.0,
+      "gross_profit": -12.839999999999918,
+      "net_profit": -78.779,
+      "mean_net_profit": -0.27353819444444444,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.3426755319148935,
+        0.9319316363636364
+      ]
+    },
+    {
+      "rule": "Updated forecast range",
+      "phase": "full",
+      "cohort": "common city-days",
+      "entries": 288,
+      "wins": 82,
+      "cost": 1330.24,
+      "fees": 65.1656,
+      "payout": 1195.0,
+      "gross_profit": -135.24,
+      "net_profit": -200.4056,
+      "mean_net_profit": -0.6958527777777778,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.5809787769784174,
+        0.29417018181818183
+      ]
+    },
+    {
+      "rule": "Original one-degree step",
+      "phase": "earlier",
+      "cohort": "all eligible",
+      "entries": 198,
+      "wins": 51,
+      "cost": 915.13,
+      "fees": 45.1699,
+      "payout": 851.0,
+      "gross_profit": -64.13,
+      "net_profit": -109.2999,
+      "mean_net_profit": -0.552019696969697,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.884528292682927,
+        0.9195248756218904
+      ]
+    },
+    {
+      "rule": "Updated forecast range",
+      "phase": "earlier",
+      "cohort": "all eligible",
+      "entries": 188,
+      "wins": 49,
+      "cost": 868.68,
+      "fees": 42.6386,
+      "payout": 814.0,
+      "gross_profit": -54.67999999999995,
+      "net_profit": -97.3186,
+      "mean_net_profit": -0.5176521276595745,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.9092337016574585,
+        1.0692954022988506
+      ]
+    },
+    {
+      "rule": "Original one-degree step",
+      "phase": "earlier",
+      "cohort": "common city-days",
+      "entries": 176,
+      "wins": 44,
+      "cost": 813.73,
+      "fees": 40.3229,
+      "payout": 777.0,
+      "gross_profit": -36.73000000000002,
+      "net_profit": -77.0529,
+      "mean_net_profit": -0.4378005681818182,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.8964983146067416,
+        1.255008
+      ]
+    },
+    {
+      "rule": "Updated forecast range",
+      "phase": "earlier",
+      "cohort": "common city-days",
+      "entries": 176,
+      "wins": 47,
+      "cost": 813.04,
+      "fees": 39.6084,
+      "payout": 726.0,
+      "gross_profit": -87.03999999999996,
+      "net_profit": -126.6484,
+      "mean_net_profit": -0.7195931818181818,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.9473695876288661,
+        0.7361534161490682
+      ]
+    },
+    {
+      "rule": "Original one-degree step",
+      "phase": "later",
+      "cohort": "all eligible",
+      "entries": 120,
+      "wins": 42,
+      "cost": 554.52,
+      "fees": 27.4225,
+      "payout": 577.0,
+      "gross_profit": 22.480000000000018,
+      "net_profit": -4.9425,
+      "mean_net_profit": -0.0411875,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.560405172413793,
+        1.5057634146341463
+      ]
+    },
+    {
+      "rule": "Updated forecast range",
+      "phase": "later",
+      "cohort": "all eligible",
+      "entries": 115,
+      "wins": 35,
+      "cost": 531.13,
+      "fees": 26.4189,
+      "payout": 469.0,
+      "gross_profit": -62.129999999999995,
+      "net_profit": -88.5489,
+      "mean_net_profit": -0.7699904347826088,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.8722657894736843,
+        0.32081372549019604
+      ]
+    },
+    {
+      "rule": "Original one-degree step",
+      "phase": "later",
+      "cohort": "common city-days",
+      "entries": 112,
+      "wins": 39,
+      "cost": 517.11,
+      "fees": 25.6161,
+      "payout": 541.0,
+      "gross_profit": 23.889999999999986,
+      "net_profit": -1.7261,
+      "mean_net_profit": -0.015411607142857142,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.4915389380530975,
+        1.5902481203007517
+      ]
+    },
+    {
+      "rule": "Updated forecast range",
+      "phase": "later",
+      "cohort": "common city-days",
+      "entries": 112,
+      "wins": 35,
+      "cost": 517.2,
+      "fees": 25.5572,
+      "payout": 469.0,
+      "gross_profit": -48.200000000000045,
+      "net_profit": -73.7572,
+      "mean_net_profit": -0.6585464285714285,
+      "mean_net_profit_95_percent_date_bootstrap": [
+        -1.8077540540540542,
+        0.47020631578947364
+      ]
+    }
+  ]
+}

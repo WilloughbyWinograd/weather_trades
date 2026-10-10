@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "raw_quote_windows_verified": 454,
+  "unchanged_revision_signals": 454,
+  "unchanged_baseline_entries": 318,
+  "settlement_records_verified": 621,
+  "independent_target_rounding_and_profit_arithmetic": true,
+  "network_disabled_replay_identical": true,
+  "inputs_sha256": "8b8a048c6b66fff9af33378cf53e3b8da88f97ef725ecb780854724e0c418fbb",
+  "output_sha256": {
+    "reports/hrrr-updated-range/signals.csv": "927037fbc13af6aab6157fc28765f8dae1c731f0079cddef9c06106e03d64bb4",
+    "reports/hrrr-updated-range/ledger.csv": "38ed5218edc2f4f6b7629ec66fdab9f8fb8f357469737790395c6001a0e79ea7",
+    "reports/hrrr-updated-range/comparison.csv": "2aa8b5769d7522fa7807a611bec039811bbee3d447734d48cbb78ccc5751936c",
+    "reports/hrrr-updated-range/summary.json": "7f792be8e6e2e844085b4764449cfc6c39a618bc6abc8ba661b43a09526bfa07",
+    "reports/hrrr-updated-range/summary.md": "a5fedc79203bda91d1bc87b9e86308cb88c23daa89a0c5a8fe297f8788f733fc"
+  }
+}

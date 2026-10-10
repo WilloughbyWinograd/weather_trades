@@ -8,6 +8,8 @@ The [tweet-method retest](reports/tweet-price-response/summary.md) measures quot
 
 The [selling-rule comparison](reports/exit-comparison/summary.md) tests four timed exits, two profit-target/stop-loss combinations, and settlement on the same entries, including purchase and sale fees. Reproduce it with `python -m weather_trades.cli replay-exits`.
 
+The [HRRR updated-range comparison](reports/hrrr-updated-range/summary.md) changes only the selected contract to the range containing the updated forecast and holds to settlement. Reproduce it with `python -m weather_trades.cli replay-hrrr-range`.
+
 Each model receives a separate hypothetical **$100**, shared across all eligible cities. The initial study covers August 28–October 8, 2026. September 25–October 8 is the original reserved evaluation period. This correction reuses those dates; it is not a new untouched evaluation. Trading parameters remain frozen.
 
 The program uses actual settlement-station coordinates, individual archived model runs, later bid and ask candles, dated contract outcomes, fees, and cash constraints. Results assume fills because historical executable quantities are unavailable. Missing source runs remain explicit gaps.

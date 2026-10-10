@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-10-10T18:59:04Z",
+  "baseline_commit": "5c87f81cdb750fce9f0fa1fcbda30a2611e30eec",
+  "model": "HRRR",
+  "entry_settings": "config/tweet-price-response.json",
+  "settlement_settings": "config/exit-comparison.json",
+  "only_change": "Select the bracket containing the updated forecast maximum, converted directly to Fahrenheit and rounded to the nearest integer with half away from zero. Do not first round Celsius or require a change of bracket.",
+  "unchanged": "Original HRRR runs, publication gates, paired city-day universe, revision threshold, hourly polling, execution delay, quote wait, 5–60 cent initial ask, 5 dollar maximum entry including purchase fees, and holding to settlement.",
+  "comparison": "Report all eligible entries for each rule, then the same city-days eligible under both. Quote availability and the price filter are applied separately to each selected contract. Include earlier and later period diagnostics without retuning.",
+  "scope": "One historical rule change on already studied dates. Assumed quoted fills, no cash constraint or portfolio compounding, and no real orders. This is not untouched evaluation."
+}

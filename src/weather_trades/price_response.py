@@ -43,7 +43,7 @@ def settings():
     return json.loads((ROOT / CONFIG).read_text())
 
 
-def make_signals(markets):
+def make_signals(markets, *, updated_forecast=False):
     cfg = settings()
     forecasts = {
         (r["cli"], r["date"], r["model"], int(r["run_hour"])): r
@@ -106,7 +106,11 @@ def make_signals(markets):
                 math.ceil(ready / cfg["poll_seconds"]) * cfg["poll_seconds"]
                 + cfg["processing_buffer_seconds"]
             )
-            target_c = rounded(previous) + (1 if revision > 0 else -1)
+            target_c = (
+                current
+                if updated_forecast
+                else rounded(previous) + (1 if revision > 0 else -1)
+            )
             target_f = rounded(target_c * 1.8 + 32)
             matches = [m for m in events[v["event"]] if contains(m, target_f)]
             s = {

@@ -26,6 +26,9 @@ def main():
             "compare-exits",
             "replay-exits",
             "verify-exits",
+            "compare-hrrr-range",
+            "replay-hrrr-range",
+            "verify-hrrr-range",
         ],
     )
     a = p.parse_args()
@@ -99,6 +102,18 @@ def main():
         run()
     elif a.command == "verify-exits":
         from .exits import verify
+
+        verify()
+    elif a.command == "compare-hrrr-range":
+        from .hrrr_range import acquire
+
+        acquire()
+    elif a.command == "replay-hrrr-range":
+        from .hrrr_range import run
+
+        run()
+    elif a.command == "verify-hrrr-range":
+        from .hrrr_range import verify
 
         verify()
 
