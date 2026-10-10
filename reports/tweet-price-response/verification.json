@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "quote_responses_verified": 799,
+  "signals_verified": 799,
+  "horizon_records_verified": 1168,
+  "network_disabled_replay_identical": true,
+  "output_sha256": {
+    "reports/tweet-price-response/signals.csv": "ab4f58164ad5673408f775489330833b7916632878571c8dcd71b9d6816c7464",
+    "reports/tweet-price-response/samples.csv": "2761c1ca99f6568f734f3edbf7c11b7a55a89e8a3aada3f3471b6f4ebc0ee18a",
+    "reports/tweet-price-response/exclusions.csv": "1e0b95922debd113df9b52d5a7d5e27436c718bb2c83391297f4d17bb35e4c35",
+    "reports/tweet-price-response/summary.json": "b8a6868d6901cbd86a8619ace4fca86d7c8ade68e21d9ffc29dbe2c36994f44a",
+    "reports/tweet-price-response/summary.md": "8293455f1f1c5597cbb4fab589674a40b2f393cf9c63003f52894bfc3ca30444"
+  },
+  "inputs_sha256": "9139efe5558d51b967c1ea2422a5ec04d8beda6e1158900ba32005b9d4b04374"
+}

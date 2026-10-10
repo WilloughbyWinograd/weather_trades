@@ -1,0 +1,88 @@
+{
+  "paired_city_days": 984,
+  "cities": 24,
+  "study_start": "2026-08-28",
+  "study_end": "2026-10-08",
+  "results": [
+    {
+      "model": "GFS",
+      "horizon_minutes": 15,
+      "revision_signals": 345,
+      "eligible_initial_quotes": 266,
+      "observed": 109,
+      "missing": 157,
+      "mean_ask_change_cents": -0.03669724770642202,
+      "median_ask_change_cents": 0.0,
+      "risers": 26,
+      "unchanged": 56,
+      "fallers": 27,
+      "mean_later_bid_minus_initial_ask_cents": -2.256880733944954,
+      "initial_zero_volume": 88,
+      "signal_statuses": {
+        "eligible": 266,
+        "initial ask outside band": 32,
+        "no initial quote": 47
+      }
+    },
+    {
+      "model": "GFS",
+      "horizon_minutes": 60,
+      "revision_signals": 345,
+      "eligible_initial_quotes": 266,
+      "observed": 116,
+      "missing": 150,
+      "mean_ask_change_cents": -0.22413793103448276,
+      "median_ask_change_cents": 0.0,
+      "risers": 39,
+      "unchanged": 31,
+      "fallers": 46,
+      "mean_later_bid_minus_initial_ask_cents": -1.9396551724137931,
+      "initial_zero_volume": 97,
+      "signal_statuses": {
+        "eligible": 266,
+        "initial ask outside band": 32,
+        "no initial quote": 47
+      }
+    },
+    {
+      "model": "HRRR",
+      "horizon_minutes": 15,
+      "revision_signals": 454,
+      "eligible_initial_quotes": 318,
+      "observed": 117,
+      "missing": 201,
+      "mean_ask_change_cents": 0.36752136752136755,
+      "median_ask_change_cents": 0.0,
+      "risers": 30,
+      "unchanged": 70,
+      "fallers": 17,
+      "mean_later_bid_minus_initial_ask_cents": -1.8376068376068375,
+      "initial_zero_volume": 102,
+      "signal_statuses": {
+        "no initial quote": 94,
+        "eligible": 318,
+        "initial ask outside band": 42
+      }
+    },
+    {
+      "model": "HRRR",
+      "horizon_minutes": 60,
+      "revision_signals": 454,
+      "eligible_initial_quotes": 318,
+      "observed": 156,
+      "missing": 162,
+      "mean_ask_change_cents": 0.5192307692307693,
+      "median_ask_change_cents": 0.0,
+      "risers": 61,
+      "unchanged": 53,
+      "fallers": 42,
+      "mean_later_bid_minus_initial_ask_cents": -1.8269230769230769,
+      "initial_zero_volume": 134,
+      "signal_statuses": {
+        "no initial quote": 94,
+        "eligible": 318,
+        "initial ask outside band": 42
+      }
+    }
+  ]
+}

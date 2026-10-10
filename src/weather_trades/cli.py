@@ -20,6 +20,9 @@ def main():
             "locations",
             "availability",
             "check-noaa",
+            "tweet-prices",
+            "replay-tweet-prices",
+            "verify-tweet-prices",
         ],
     )
     a = p.parse_args()
@@ -71,6 +74,18 @@ def main():
         from .noaa_check import run
 
         run()
+    elif a.command == "tweet-prices":
+        from .price_response import acquire
+
+        acquire()
+    elif a.command == "replay-tweet-prices":
+        from .price_response import run
+
+        run()
+    elif a.command == "verify-tweet-prices":
+        from .price_response import verify
+
+        verify()
 
 
 if __name__ == "__main__":

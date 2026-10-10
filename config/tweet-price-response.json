@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "frozen_at_utc": "2026-10-10T18:23:00.168566+00:00",
+  "source_tweet": "https://x.com/xmayeth/status/2108586474715185534",
+  "source_retrieval_url": "https://api.fxtwitter.com/status/2108586474715185534",
+  "source_response_sha256": "aaf634a11298d65b8d05f60bef3c54b70a1778170a29d450a5cbe66b16cbb0ba",
+  "study_start": "2026-08-28",
+  "study_end": "2026-10-08",
+  "models": [
+    "GFS",
+    "HRRR"
+  ],
+  "previous_cycle_utc_hour": 12,
+  "current_cycle_utc_hour": 18,
+  "day_basis": "standard",
+  "minimum_revision_celsius": 0.5,
+  "minimum_ask_dollars": 0.05,
+  "maximum_ask_dollars": 0.6,
+  "contract_selection": "Round previous high to whole Celsius, then move one Celsius degree in revision direction; convert to Fahrenheit, round to integer, and select its bracket. Both roundings use half away from zero.",
+  "poll_seconds": 3600,
+  "processing_buffer_seconds": 60,
+  "execution_delay_minutes": 1,
+  "quote_max_wait_minutes": 5,
+  "horizons_minutes": [
+    15,
+    60
+  ],
+  "future_quote_policy": "Exact end-minute only; no forward fill. Keep missing observations explicit.",
+  "metric": "Later ask minus initial ask, in cents per contract. Also report later bid minus initial ask as a spread diagnostic; neither is realized profit.",
+  "scope": "Kalshi adaptation of the tweet entry rule on the existing paired city-day universe and 12-to-18 UTC run comparison. No settlement exit, portfolio, capital constraint, fees, or assumed fills. This previously analyzed period is not untouched evaluation."
+}
